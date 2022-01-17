@@ -1,0 +1,24 @@
+{
+  "name": "enrichmentsupportsystemfortheelderly",
+  "version": "1.0.0",
+  "description": "smb://LS720D5E9._smb._tcp.local/busys-q/◆HAISABU様関連/高齢者の豊かさ支援システム",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "scss": "sass scss/:css/ --style expanded --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satochibi/EnrichmentSupportSystemForTheElderly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satochibi/EnrichmentSupportSystemForTheElderly/issues"
+  },
+  "homepage": "https://github.com/satochibi/EnrichmentSupportSystemForTheElderly#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sass": "^1.48.0"
+  }
+}

@@ -1,0 +1,73 @@
+$orange: rgb(237, 108, 0);
+$black: rgb(70, 30, 30);
+$media-sp: 600px;
+
+@mixin sp {
+    @media only screen and (max-width: $media-sp) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media only screen and (min-width: $media-sp) {
+        @content;
+    }
+}
+
+div.container {
+    // センタリング
+    max-width: 950px;
+    margin: 0 auto;
+
+    header {
+        background-color: $orange;
+        h1 {
+            color: black;
+            margin: 0;
+            span {
+                color: white;
+            }
+        }
+    }
+    
+    
+    footer{
+        ul.footer-menu-1 {
+            list-style-type: none;
+            background-color: $black;
+            margin: 0;
+            padding: 0;
+            li {
+                color: white;
+                ul.footer-menu-2 {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    @include sp{
+                        flex-direction: column;
+                    }
+                    
+                    li {
+                        &:not(:last-child):after{
+                            content: "-";
+                            margin: 0 3px;
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+    
+        .footer-logo {
+            text-align: center;
+            font-size: 25px;
+            background-color: $orange;
+            color: white;
+            padding: 20px 0;
+        }
+    }
+}
