@@ -1,5 +1,6 @@
 $orange: rgb(237, 108, 0);
 $black: rgb(70, 30, 30);
+$btn-color: rgb(79, 42, 35);
 $media-sp: 600px;
 
 @mixin sp {
@@ -14,6 +15,68 @@ $media-sp: 600px;
     }
 }
 
+@mixin buttons {
+    h3 {
+        text-align: center;
+        padding: 30px;
+        margin: 0;
+    }
+
+    div.buttons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+ }
+
+a.btn-flat {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    position: relative;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    color: $btn-color;
+    background: white;
+    border: 2px solid $btn-color;
+    height: 70px;
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+
+
+
+    span{
+        // position: relative;
+        i {
+            position: absolute;
+            right: 6px;
+            top: 26px;
+        }
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 150%;
+        height: 500%;
+        content: '';
+        transition: all .5s ease-in-out;
+        transform: translateX(-98%) translateY(-70%) rotate(135deg);
+        background: $btn-color;
+    }
+}
+
+
 div.container {
     // センタリング
     max-width: 950px;
@@ -21,13 +84,76 @@ div.container {
 
     header {
         background-color: $orange;
+        padding: 25px;
         h1 {
             color: black;
             margin: 0;
             span {
                 color: white;
+                font-size: 120%;
             }
         }
+    }
+
+    .banner{
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .breadcrumb-list{
+        background-color: $black;
+        color: white;
+        text-align: right;
+        padding: 0 10px;
+    }
+
+    .search-service{
+        background-color: rgb(254, 247, 233);
+
+        h2{
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 2em;
+            padding-top: 2em;
+            display: flex;
+            justify-content: center;
+            font-size: 2em;
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 50%;
+                // 線の上下位置
+                bottom: -15px;
+                display: inline-block;
+                // 線の長さ
+                width: 60px;
+                // 線の太さ
+                height: 5px;
+                -webkit-transform: translateX(-50%);
+                // 位置調整
+                transform: translateX(-50%);
+                // 線の色
+                background-color: black;
+                // 線の丸み
+                border-radius: 2px;
+            }
+        }
+
+        div.service-table{
+            div.delivery-service{
+                @include buttons();
+                background-color: rgb(186, 169, 152);
+            }
+
+            div.other-service{
+                @include buttons();
+            }
+        }
+
+
     }
     
     
@@ -37,13 +163,37 @@ div.container {
             background-color: $black;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             li {
+                a{
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
                 color: white;
+
+
+                &:not(ul.footer-menu-2 > li):first-child::before{
+                    content: "|";
+                    margin: 0 3px;
+                }
+
+                &:not(ul.footer-menu-2 > li):after{
+                    content: "|";
+                    margin: 0 3px;
+                }
+                
+                
                 ul.footer-menu-2 {
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
-                    display: flex;
+                    display: inline-flex;
                     flex-wrap: wrap;
 
                     @include sp{
@@ -68,6 +218,15 @@ div.container {
             background-color: $orange;
             color: white;
             padding: 20px 0;
+        }
+
+        .ads {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: rgb(190, 190, 190);
         }
     }
 }
