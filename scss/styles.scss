@@ -222,9 +222,31 @@ div.container {
         }
 
         .back-to-top-btn{
-            background-color: blue;
-            p{
-                margin: 0;
+            background-color: white;
+            width: 68px;
+            height: 68px;
+            font-size: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: $black;
+            border: 3px solid $black;
+            text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+
+            @include sp{
+                display: none;
+            }
+            
+            div{
+                p{
+                    margin: 0;
+                    font-size: 10px;
+                }
             }
         }
     
