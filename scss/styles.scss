@@ -143,6 +143,15 @@ div.container {
         }
 
         div.service-table{
+            display: flex;
+            padding-bottom: 100px;
+
+            @include sp{
+                flex-direction: column;
+                padding-bottom: 0;
+            }
+
+
             div.delivery-service{
                 @include buttons();
                 background-color: rgb(186, 169, 152);
@@ -209,6 +218,13 @@ div.container {
                     
                 }
 
+            }
+        }
+
+        .back-to-top-btn{
+            background-color: blue;
+            p{
+                margin: 0;
             }
         }
     
