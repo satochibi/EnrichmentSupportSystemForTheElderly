@@ -1,3 +1,14 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 a.btn-flat {
   font-size: 1.25rem;
   font-weight: bold;
@@ -42,10 +53,18 @@ div.container {
 }
 div.container header {
   background-color: #ed6c00;
-  padding: 25px;
 }
 div.container header h1 {
   margin: 0;
+  padding: 25px;
+}
+@media only screen and (max-width: 600px) {
+  div.container header h1 {
+    font-size: 18px;
+    padding: 12px 0;
+    padding-left: 7px;
+    margin: 0 auto;
+  }
 }
 div.container header h1 a {
   color: black;
@@ -92,6 +111,7 @@ div.container .search-service h2 {
   display: flex;
   justify-content: center;
   font-size: 2em;
+  text-align: center;
 }
 div.container .search-service h2::before {
   content: "";
@@ -142,6 +162,76 @@ div.container .search-service div.service-table div.other-service div.buttons {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 30px;
+}
+div.container .search-service div.shopping-table {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+div.container .search-service div.shopping-table div.item-cell {
+  border: 1px solid #a0a0a0;
+  background-color: white;
+  width: 400px;
+  margin-bottom: 80px;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-header {
+  background-color: #4f2a23;
+  color: white;
+  font-size: 26px;
+  margin: 40px 20px 15px;
+  padding: 10px;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-header h3 {
+  margin: 0;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body {
+  margin: 0 40px 40px;
+  color: #4f2a23;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body hr {
+  margin: 5px 0;
+  border: 2px solid #4f2a23;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form {
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  font-size: 24px;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form .tax-text {
+  font-size: 50%;
+  letter-spacing: normal;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form select {
+  float: right;
+  cursor: pointer;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form .menu-list {
+  margin: 10px 0;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form .detail {
+  font-size: medium;
+  letter-spacing: normal;
+  margin: 10px 0;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form button {
+  width: 100%;
+  padding: 15px 0;
+  border: 2px solid #4f2a23;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form button .cart-icon {
+  padding: 0 10px;
+}
+div.container .search-service div.shopping-table div.item-cell div.item-body form button:hover {
+  background-color: #e6e6e6;
 }
 div.container footer .footer-logo {
   text-align: center;
