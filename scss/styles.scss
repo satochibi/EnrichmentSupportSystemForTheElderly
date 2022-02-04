@@ -2,6 +2,7 @@ $orange: rgb(237, 108, 0);
 $black: rgb(70, 30, 30);
 $btn-color: rgb(79, 42, 35);
 $media-sp: 600px;
+$media-pc: 950px;
 
 @mixin sp {
     @media only screen and (max-width: $media-sp) {
@@ -10,10 +11,11 @@ $media-sp: 600px;
 }
 
 @mixin pc {
-    @media only screen and (min-width: $media-sp) {
+    @media only screen and (min-width: $media-pc) {
         @content;
     }
 }
+
 
 @mixin buttons {
     h3 {
@@ -79,7 +81,7 @@ a.btn-flat {
 
 div.container {
     // センタリング
-    max-width: 950px;
+    max-width: $media-pc;
     margin: 0 auto;
 
     header {
@@ -195,88 +197,6 @@ div.container {
     
     
     footer{
-        ul.footer-menu-1 {
-            list-style-type: none;
-            background-color: $black;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            li {
-                a{
-                    color: white;
-                    text-decoration: none;
-
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-                color: white;
-
-
-                &:not(ul.footer-menu-2 > li):first-child::before{
-                    content: "|";
-                    margin: 0 3px;
-                }
-
-                &:not(ul.footer-menu-2 > li):after{
-                    content: "|";
-                    margin: 0 3px;
-                }
-                
-                
-                ul.footer-menu-2 {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    display: inline-flex;
-                    flex-wrap: wrap;
-
-                    @include sp{
-                        flex-direction: column;
-                    }
-                    
-                    li {
-                        &:not(:last-child):after{
-                            content: "-";
-                            margin: 0 3px;
-                        }
-                    }
-                    
-                }
-
-            }
-        }
-
-        .back-to-top-btn{
-            background-color: white;
-            width: 68px;
-            height: 68px;
-            font-size: 30px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            color: $black;
-            border: 3px solid $black;
-            text-decoration: none;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-
-            @include sp{
-                display: none;
-            }
-            
-            div{
-                p{
-                    margin: 0;
-                    font-size: 10px;
-                }
-            }
-        }
     
         .footer-logo {
             text-align: center;
