@@ -308,6 +308,13 @@ div.container {
             }
 
             form {
+                background-color: white;
+                border: 1px solid rgb(221, 221, 221);
+                border-radius: 5px;
+                padding: 26px;
+                
+
+
                 label, input, textarea, button{
                     display: block;
                     padding: 0;
@@ -321,38 +328,63 @@ div.container {
                     padding: 10px;
                 }
 
-                .input-field{
+                .input-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .input-field{
+                        margin-bottom: 20px;
+                        flex-basis: 48%;
+
+                        @include sp {
+                            flex-basis: 100%;
+                        }
+    
+                        input {
+                            height: 3em;
+                            width: 100%;
+                        }
+    
+                        label {
+                            color: black;
+                            font-weight: bold;
+                            margin-bottom: 7px;
+                        }
+    
+                        small {
+                            background-color: rgb(237, 0, 0);
+                            border-radius: 4px;
+                            color: white;
+                            padding: 2px 6px;
+                            font-weight: bold;
+                            margin: 0 4px;
+                        }
+                    }
+    
+    
+                    .text-field textarea {
+                        height: 10em;
+                        width: 100%;
+                    }
+
+                    .grow-field {
+                        flex-basis: 100%;
+                    }
+                }
+
+
+                .button-field {
+                    display: flex;
+                    justify-content: center;
                     input {
-                        height: 3em;
-                    }
-
-                    label {
-                        color: black;
-                        font-weight: bold;
-                    }
-
-                    small {
-                        background-color: rgb(237, 0, 0);
-                        border-radius: 4px;
-                        color: white;
-                        padding: 2px 6px;
-                        font-weight: bold;
-                        margin: 0 4px;
+                        height: auto;
+                        padding: 10px 20px;
+                        margin: 0 20px;
                     }
                 }
 
-                .button-field input {
-                    height: auto;
-                    padding: 10px 20px;
-                }
 
-                .text-field textarea {
-                    height: 10em;
-                }
-
-                background-color: white;
-                border: 1px solid rgb(221, 221, 221);
-                border-radius: 5px;
             }
         }
     }

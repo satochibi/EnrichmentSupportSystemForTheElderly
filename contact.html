@@ -30,35 +30,38 @@
 
             <div class="contact-table">
                 <form>
-                    <div class="input-field">
-                        <label class="label" for="name">お名前<small>必須</small></label>
-                        <input id="name" type="text" name="name" placeholder="砥部 花子" required>
-                    </div>
-                    <div class="input-field">
-                        <label class="label" for="furigana">ふりがな<small>必須</small></label>
-                        <input id="furigana" type="text" name="furigana" placeholder="とべ はなこ"
-                            pattern="(?=.*?[\u3041-\u309F])[\u3041-\u309F\s]*" required>
-                    </div>
-                    <div class="input-field">
-                        <label class="label" for="phone-number">電話番号<small>必須</small></label>
-                        <input id="phone-number" type="text" name="phone-number" placeholder="089-982-0001"
-                            pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" required>
-                    </div>
-                    <div class="input-field">
-                        <label class="label" for="e-mail">メールアドレス<small>必須</small></label>
-                        <input id="e-mail" type="email" name="email" placeholder="hanako@tobecho.com" required>
-                    </div>
-                    <div class="input-field">
-                        <label class="label" for="postcode">郵便番号</label>
-                        <input id="postcode" type="text" name="postcode" placeholder="799-0001" pattern="\d{3}-?\d{4}">
-                    </div>
-                    <div class="input-field">
-                        <label class="label" for="address">ご住所</label>
-                        <input id="address" type="text" name="address" placeholder="愛媛県伊予郡砥部町">
-                    </div>
-                    <div class="input-field text-field">
-                        <label class="label" for="message">本文<small>必須</small></label>
-                        <textarea rows="4" id="message" placeholder="メッセージをどうぞ" name="message" required></textarea>
+                    <div class="input-container">
+                        <div class="input-field">
+                            <label class="label" for="name">お名前<small>必須</small></label>
+                            <input id="name" type="text" name="name" placeholder="砥部 花子" required>
+                        </div>
+                        <div class="input-field">
+                            <label class="label" for="furigana">ふりがな<small>必須</small></label>
+                            <input id="furigana" type="text" name="furigana" placeholder="とべ はなこ"
+                                pattern="(?=.*?[\u3041-\u309F])[\u3041-\u309F\s]*" required>
+                        </div>
+                        <div class="input-field">
+                            <label class="label" for="phone-number">電話番号<small>必須</small></label>
+                            <input id="phone-number" type="text" name="phone-number" placeholder="089-982-0001"
+                                pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" required>
+                        </div>
+                        <div class="input-field">
+                            <label class="label" for="e-mail">メールアドレス<small>必須</small></label>
+                            <input id="e-mail" type="email" name="email" placeholder="hanako@tobecho.com" required>
+                        </div>
+                        <div class="input-field grow-field">
+                            <label class="label" for="postcode">郵便番号</label>
+                            <input id="postcode" type="text" name="postcode" placeholder="799-0001"
+                                pattern="\d{3}-?\d{4}">
+                        </div>
+                        <div class="input-field grow-field">
+                            <label class="label" for="address">ご住所</label>
+                            <input id="address" type="text" name="address" placeholder="愛媛県伊予郡砥部町">
+                        </div>
+                        <div class="input-field text-field grow-field">
+                            <label class="label" for="message">本文<small>必須</small></label>
+                            <textarea rows="4" id="message" placeholder="メッセージをどうぞ" name="message" required></textarea>
+                        </div>
                     </div>
                     <div class="button-field">
                         <input type="reset" value="リセット">
