@@ -235,6 +235,52 @@ div.container .search-service div.shopping-table div.item-cell div.item-body for
 div.container .search-service div.shopping-table div.item-cell div.item-body form button:hover {
   background-color: #e6e6e6;
 }
+div.container .search-service div.contact-table {
+  padding: 0 30px 50px;
+}
+@media only screen and (max-width: 600px) {
+  div.container .search-service div.contact-table {
+    padding: 0 0 50px;
+  }
+}
+div.container .search-service div.contact-table form {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+div.container .search-service div.contact-table form label, div.container .search-service div.contact-table form input, div.container .search-service div.contact-table form textarea, div.container .search-service div.contact-table form button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div.container .search-service div.contact-table form input, div.container .search-service div.contact-table form textarea {
+  border: 1px solid #767676;
+  border-radius: 2px;
+  padding: 10px;
+}
+div.container .search-service div.contact-table form .input-field input {
+  height: 3em;
+}
+div.container .search-service div.contact-table form .input-field label {
+  color: black;
+  font-weight: bold;
+}
+div.container .search-service div.contact-table form .input-field small {
+  background-color: #ed0000;
+  border-radius: 4px;
+  color: white;
+  padding: 2px 6px;
+  font-weight: bold;
+  margin: 0 4px;
+}
+div.container .search-service div.contact-table form .button-field input {
+  height: auto;
+  padding: 10px 20px;
+}
+div.container .search-service div.contact-table form .text-field textarea {
+  height: 10em;
+}
 div.container footer .footer-logo {
   text-align: center;
   font-size: 25px;

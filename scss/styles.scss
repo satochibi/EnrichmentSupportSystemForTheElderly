@@ -299,6 +299,62 @@ div.container {
                 }
             }
         }
+
+        // お問い合わせのテーブルスタイル
+        div.contact-table{
+            padding: 0 30px 50px;
+            @include sp {
+                padding: 0 0 50px;
+            }
+
+            form {
+                label, input, textarea, button{
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+
+                input, textarea {
+                    border: 1px solid rgb(118,118,118);
+                    border-radius: 2px;
+                    padding: 10px;
+                }
+
+                .input-field{
+                    input {
+                        height: 3em;
+                    }
+
+                    label {
+                        color: black;
+                        font-weight: bold;
+                    }
+
+                    small {
+                        background-color: rgb(237, 0, 0);
+                        border-radius: 4px;
+                        color: white;
+                        padding: 2px 6px;
+                        font-weight: bold;
+                        margin: 0 4px;
+                    }
+                }
+
+                .button-field input {
+                    height: auto;
+                    padding: 10px 20px;
+                }
+
+                .text-field textarea {
+                    height: 10em;
+                }
+
+                background-color: white;
+                border: 1px solid rgb(221, 221, 221);
+                border-radius: 5px;
+            }
+        }
     }
     
     
