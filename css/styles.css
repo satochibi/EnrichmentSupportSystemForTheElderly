@@ -218,12 +218,14 @@ div.container .search-service div.shopping-table div.item-cell div.item-body for
   font-size: medium;
   letter-spacing: normal;
   margin: 10px 0;
+  height: 6.5em;
 }
 div.container .search-service div.shopping-table div.item-cell div.item-body form button {
   width: 100%;
   padding: 15px 0;
   border: 2px solid #4f2a23;
   background-color: white;
+  color: #4f2a23;
   font-weight: bold;
   cursor: pointer;
 }

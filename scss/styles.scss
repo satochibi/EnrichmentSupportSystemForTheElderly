@@ -275,6 +275,7 @@ div.container {
                             font-size: medium;
                             letter-spacing: normal;
                             margin: 10px 0;
+                            height: 6.5em;
                         }
 
                         button {
@@ -282,6 +283,7 @@ div.container {
                             padding: 15px 0;
                             border: 2px solid $btn-color;
                             background-color: white;
+                            color: $btn-color;
                             font-weight: bold;
                             cursor: pointer;
                             .cart-icon {
