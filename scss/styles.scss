@@ -377,14 +377,26 @@ div.container {
                 .button-field {
                     display: flex;
                     justify-content: center;
+                    
                     input {
                         height: auto;
                         padding: 10px 20px;
                         margin: 0 20px;
+                        cursor: pointer;
+                    }
+
+                    input[type="reset"] {
+                        border: 1px solid rgb(160, 160, 160);
+                        color: black;
+                        background-color: white;
+                    }
+
+                    input[type="submit"] {
+                        border: none;
+                        color: white;
+                        background-color: rgb(51, 195, 240);
                     }
                 }
-
-
             }
         }
     }

@@ -306,6 +306,17 @@ div.container .search-service div.contact-table form .button-field input {
   height: auto;
   padding: 10px 20px;
   margin: 0 20px;
+  cursor: pointer;
+}
+div.container .search-service div.contact-table form .button-field input[type=reset] {
+  border: 1px solid #a0a0a0;
+  color: black;
+  background-color: white;
+}
+div.container .search-service div.contact-table form .button-field input[type=submit] {
+  border: none;
+  color: white;
+  background-color: #33c3f0;
 }
 div.container footer .footer-logo {
   text-align: center;
