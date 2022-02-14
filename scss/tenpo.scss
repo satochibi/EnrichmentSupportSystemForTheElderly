@@ -1,0 +1,51 @@
+@import "common.scss";
+
+// 店舗一覧のスタイル
+div.container {
+    .main-contents{
+        div.tenpo-list{
+            padding: 0 30px 50px;
+            @include sp {
+                padding: 0 0 50px;
+            }
+
+            div.buttons{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: white;
+                padding: 26px;
+                border: 1px solid #dddddd;
+                border-radius: 5px;
+
+                a.btn-flat{
+                    box-sizing: border-box;
+                    display: flex;
+                    background-image: url("../img/tenpo.png");
+                    background-size: cover;
+                    background-position: center;
+                    border: 2px solid $btn-color;
+                    width: 225px;
+                    height: 83px;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    margin: 12px;
+                }
+                span{
+                    font-size: 26px;
+                    color: white;
+                    text-shadow: 
+                    3px  3px 2px $btn-color,
+                    -3px  3px 2px $btn-color,
+                    3px -3px 2px $btn-color,
+                    -3px -3px 2px $btn-color,
+                    3px  0px 2px $btn-color,
+                    0px  3px 2px $btn-color,
+                    -3px  0px 2px $btn-color,
+                    0px -3px 2px $btn-color;  
+                }
+            }
+        }
+    }
+}
