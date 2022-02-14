@@ -176,6 +176,7 @@ div.container .main-contents div.contact-table form .button-field input {
   padding: 10px 20px;
   margin: 0 20px;
   cursor: pointer;
+  box-shadow: 0 3px 3px gray;
 }
 div.container .main-contents div.contact-table form .button-field input[type=reset] {
   border: 1px solid #a0a0a0;
@@ -185,7 +186,7 @@ div.container .main-contents div.contact-table form .button-field input[type=res
 div.container .main-contents div.contact-table form .button-field input[type=submit] {
   border: none;
   color: white;
-  background-color: #33c3f0;
+  background-color: #3a0da4;
 }
 
 /*# sourceMappingURL=contact.css.map */
