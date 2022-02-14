@@ -1,0 +1,91 @@
+@import "common.scss";
+
+// お弁当のテーブルスタイル
+div.container {
+    .main-contents{
+        div.shopping-table{
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+
+            div.item-cell{
+                border: 1px solid rgb(160, 160, 160);
+                background-color: white;
+                width: 400px;
+                margin-bottom: 80px;
+
+                div.item-header{
+                    background-color: $btn-color;
+                    color: white;
+                    font-size: 26px;
+                    margin: 40px 20px 15px;
+                    padding: 10px;
+
+                    h3{
+                        margin: 0;
+                    }
+                }
+
+                div.item-body{
+                    margin: 0 40px 40px;
+                    color: $btn-color;
+                    h4 {
+                        margin-top: 5px;
+                        margin-bottom: 0;
+                        font-size: 24px;
+                    }
+                    hr {
+                        margin: 5px 0;
+                        border: 2px solid $btn-color;
+                    }
+
+                    form {
+                        font-size: 20px;
+                        letter-spacing: 0.3em;
+                        font-size: 24px;
+
+                        .tax-text{
+                            font-size: 50%;
+                            letter-spacing: normal;
+                        }
+
+                        select {
+                            float: right;
+                            cursor: pointer;
+                        }
+
+                        .menu-list {
+                            margin: 10px 0;
+                        }
+
+                        .detail {
+                            font-size: medium;
+                            letter-spacing: normal;
+                            margin: 10px 0;
+                            height: 6.5em;
+                        }
+
+                        button {
+                            width: 100%;
+                            padding: 15px 0;
+                            border: 2px solid $btn-color;
+                            background-color: white;
+                            color: $btn-color;
+                            font-weight: bold;
+                            cursor: pointer;
+                            .cart-icon {
+                                padding: 0 10px;
+                            }
+
+                            &:hover{
+                                background-color: rgb(230, 230, 230);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

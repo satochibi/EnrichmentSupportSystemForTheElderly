@@ -1,0 +1,107 @@
+@import "common.scss";
+
+// お問い合わせのテーブルスタイル
+div.container {
+    .main-contents{
+        div.contact-table{
+
+            padding: 0 30px 50px;
+
+            @include sp {
+                padding: 0 0 50px;
+            }
+
+            form {
+                background-color: white;
+                border: 1px solid rgb(221, 221, 221);
+                border-radius: 5px;
+                padding: 26px;
+                
+
+
+                label, input, textarea, button{
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+
+                input, textarea {
+                    border: 1px solid rgb(118,118,118);
+                    border-radius: 2px;
+                    padding: 10px;
+                }
+
+                .input-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .input-field{
+                        margin-bottom: 20px;
+                        flex-basis: 48%;
+
+                        @include sp {
+                            flex-basis: 100%;
+                        }
+    
+                        input {
+                            height: 3em;
+                            width: 100%;
+                        }
+    
+                        label {
+                            color: black;
+                            font-weight: bold;
+                            margin-bottom: 7px;
+                        }
+    
+                        small {
+                            background-color: rgb(237, 0, 0);
+                            border-radius: 4px;
+                            color: white;
+                            padding: 2px 6px;
+                            font-weight: bold;
+                            margin: 0 4px;
+                        }
+                    }
+    
+    
+                    .text-field textarea {
+                        height: 10em;
+                        width: 100%;
+                    }
+
+                    .grow-field {
+                        flex-basis: 100%;
+                    }
+                }
+
+
+                .button-field {
+                    display: flex;
+                    justify-content: center;
+                    
+                    input {
+                        height: auto;
+                        padding: 10px 20px;
+                        margin: 0 20px;
+                        cursor: pointer;
+                    }
+
+                    input[type="reset"] {
+                        border: 1px solid rgb(160, 160, 160);
+                        color: black;
+                        background-color: white;
+                    }
+
+                    input[type="submit"] {
+                        border: none;
+                        color: white;
+                        background-color: rgb(51, 195, 240);
+                    }
+                }
+            }
+        }
+    }
+}

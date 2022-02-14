@@ -1,0 +1,180 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+div.container header {
+  background-color: #ed6c00;
+}
+div.container header h1 {
+  margin: 0;
+  padding: 25px;
+}
+@media only screen and (max-width: 600px) {
+  div.container header h1 {
+    font-size: 18px;
+    padding: 12px 0;
+    padding-left: 7px;
+    margin: 0 auto;
+  }
+}
+div.container header h1 a {
+  color: black;
+  text-decoration: none;
+}
+div.container header h1 a span {
+  color: white;
+  font-size: 120%;
+}
+div.container .banner img {
+  width: 100%;
+  display: block;
+}
+div.container .breadcrumb-list {
+  background-color: #461e1e;
+}
+div.container .breadcrumb-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+div.container .breadcrumb-list ul li {
+  text-align: right;
+}
+div.container .breadcrumb-list ul li a {
+  color: white;
+  text-decoration: none;
+}
+div.container .breadcrumb-list ul li + li::before {
+  content: ">";
+  color: white;
+  margin: 0 5px;
+}
+div.container .main-contents {
+  background-color: #fef7e9;
+}
+div.container .main-contents h2 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  text-align: center;
+}
+div.container .main-contents h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+div.container footer .footer-logo {
+  text-align: center;
+  font-size: 25px;
+  background-color: #ed6c00;
+  color: white;
+  padding: 20px 0;
+}
+div.container footer .ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #bebebe;
+}
+
+div.container .main-contents div.shopping-table {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+div.container .main-contents div.shopping-table div.item-cell {
+  border: 1px solid #a0a0a0;
+  background-color: white;
+  width: 400px;
+  margin-bottom: 80px;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-header {
+  background-color: #4f2a23;
+  color: white;
+  font-size: 26px;
+  margin: 40px 20px 15px;
+  padding: 10px;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-header h3 {
+  margin: 0;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body {
+  margin: 0 40px 40px;
+  color: #4f2a23;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body hr {
+  margin: 5px 0;
+  border: 2px solid #4f2a23;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form {
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  font-size: 24px;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form .tax-text {
+  font-size: 50%;
+  letter-spacing: normal;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form select {
+  float: right;
+  cursor: pointer;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form .menu-list {
+  margin: 10px 0;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form .detail {
+  font-size: medium;
+  letter-spacing: normal;
+  margin: 10px 0;
+  height: 6.5em;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form button {
+  width: 100%;
+  padding: 15px 0;
+  border: 2px solid #4f2a23;
+  background-color: white;
+  color: #4f2a23;
+  font-weight: bold;
+  cursor: pointer;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form button .cart-icon {
+  padding: 0 10px;
+}
+div.container .main-contents div.shopping-table div.item-cell div.item-body form button:hover {
+  background-color: #e6e6e6;
+}
+
+/*# sourceMappingURL=obento.css.map */
