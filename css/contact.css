@@ -104,6 +104,13 @@ div.container footer .ads {
   background-color: #bebebe;
 }
 
+div.container .main-contents div.message p {
+  margin: 0;
+  padding: 0 110px 50px;
+}
+div.container .main-contents div.message p i.fas {
+  padding: 0 6px;
+}
 div.container .main-contents div.contact-table {
   padding: 0 30px 50px;
 }
@@ -178,6 +185,11 @@ div.container .main-contents div.contact-table form .button-field input {
   cursor: pointer;
   box-shadow: 0 3px 3px gray;
 }
+div.container .main-contents div.contact-table form .button-field input[type=button] {
+  border: 1px solid #a0a0a0;
+  color: black;
+  background-color: white;
+}
 div.container .main-contents div.contact-table form .button-field input[type=reset] {
   border: 1px solid #a0a0a0;
   color: black;
@@ -187,6 +199,26 @@ div.container .main-contents div.contact-table form .button-field input[type=sub
   border: none;
   color: white;
   background-color: #3a0da4;
+}
+div.container .main-contents div.contact-table form table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-color: #838383;
+  line-height: 1.5;
+}
+div.container .main-contents div.contact-table form table tr {
+  height: 60px;
+}
+div.container .main-contents div.contact-table form table tr th {
+  background-color: #e5e5e5;
+  text-align: center;
+  width: 20%;
+}
+div.container .main-contents div.contact-table form table tr td {
+  padding: 12px;
+  word-break: break-all;
 }
 
 /*# sourceMappingURL=contact.css.map */
