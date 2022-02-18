@@ -1,0 +1,18 @@
+@import "common.scss";
+
+div.container {
+    .main-contents{
+        div.message{
+            p {
+                margin: 0;
+                padding: 0 110px 50px;
+                text-align: center;
+                font-weight: bold;
+                color: red;
+                i.fas{
+                    padding: 0 6px;
+                }
+            }
+        }
+    }
+}
