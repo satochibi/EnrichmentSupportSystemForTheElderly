@@ -111,6 +111,19 @@ div.container .main-contents div.message p {
 div.container .main-contents div.message p i.fas {
   padding: 0 6px;
 }
+div.container .main-contents div.message .button-field {
+  padding-bottom: 50px;
+}
+div.container .main-contents div.message .button-field input[type=button] {
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 3px 3px gray;
+  border: 1px solid #a0a0a0;
+  color: black;
+  background-color: white;
+}
 div.container .main-contents div.contact-table {
   padding: 0 30px 50px;
 }
