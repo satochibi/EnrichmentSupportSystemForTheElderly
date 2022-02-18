@@ -111,6 +111,11 @@ div.container .main-contents div.message p {
   font-weight: bold;
   color: red;
 }
+@media only screen and (max-width: 600px) {
+  div.container .main-contents div.message p {
+    padding: 0 20px 50px;
+  }
+}
 div.container .main-contents div.message p i.fas {
   padding: 0 6px;
 }
