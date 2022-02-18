@@ -218,7 +218,6 @@ div.container .main-contents div.contact-table form table {
   margin-bottom: 20px;
   border-spacing: 0;
   border-collapse: collapse;
-  border-color: #838383;
   line-height: 1.5;
 }
 div.container .main-contents div.contact-table form table tr {
@@ -232,6 +231,9 @@ div.container .main-contents div.contact-table form table tr th {
 div.container .main-contents div.contact-table form table tr td {
   padding: 12px;
   word-break: break-all;
+}
+div.container .main-contents div.contact-table form table, div.container .main-contents div.contact-table form th, div.container .main-contents div.contact-table form td {
+  border: 1px solid #838383;
 }
 
 /*# sourceMappingURL=contact.css.map */
