@@ -29,7 +29,42 @@ img {
 }
 
 
+// フォームのボタンのスタイル定義
+@mixin form-button {
+    display: block !important;
+    box-sizing: border-box !important;
+    padding: 10px !important;
+    border-radius: 2px !important;
+    cursor: pointer;
+    box-shadow: 0 3px 3px gray;
+}
 
+@mixin form-normal-button {
+    @include form-button;
+    border: 1px solid rgb(160, 160, 160);
+    color: black;
+    background-color: white;
+}
+
+@mixin form-primary-button {
+    @include form-button;
+    border: none !important;
+    color: white;
+    background-color: rgb(58, 13, 164);
+}
+
+.button-field {
+    input[type="button"], input[type="reset"], button[type="button"], button[type="reset"] {
+        @include form-normal-button;
+    }
+
+    input[type="submit"], button[type="submit"] {
+        @include form-primary-button;
+    }
+}
+
+
+// ページ全体の共通のスタイル定義
 div.container {
     // センタリング
     max-width: $media-pc;

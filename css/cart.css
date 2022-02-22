@@ -9,6 +9,29 @@ img {
   clear: both;
 }
 
+.button-field input[type=button], .button-field input[type=reset], .button-field button[type=button], .button-field button[type=reset] {
+  display: block !important;
+  box-sizing: border-box !important;
+  padding: 10px !important;
+  border-radius: 2px !important;
+  cursor: pointer;
+  box-shadow: 0 3px 3px gray;
+  border: 1px solid #a0a0a0;
+  color: black;
+  background-color: white;
+}
+.button-field input[type=submit], .button-field button[type=submit] {
+  display: block !important;
+  box-sizing: border-box !important;
+  padding: 10px !important;
+  border-radius: 2px !important;
+  cursor: pointer;
+  box-shadow: 0 3px 3px gray;
+  border: none !important;
+  color: white;
+  background-color: #3a0da4;
+}
+
 div.container {
   max-width: 950px;
   margin: 0 auto;
@@ -120,6 +143,10 @@ div.container footer .ads {
   background-color: #bebebe;
 }
 
+li.cart-table-body-list-item {
+  border-right: 1px solid #a0a0a0;
+  border-top: 1px solid #a0a0a0;
+}
 li.cart-table-body-list-item:nth-child(1) {
   width: 15%;
 }
@@ -131,11 +158,13 @@ li.cart-table-body-list-item:nth-child(3) {
 }
 li.cart-table-body-list-item:nth-child(4) {
   width: 20%;
+  border-right: none;
 }
 
 li.flex-center {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 div.container .main-contents div.cart-table form .shop-item {
@@ -172,8 +201,27 @@ div.container .main-contents div.cart-table form .shop-item .cart-table-body ul 
   font-size: 25px;
   color: #734338;
 }
-div.container .main-contents div.cart-table form .shop-item .cart-table-body ul .item-column {
+div.container .main-contents div.cart-table form .shop-item .cart-table-body ul .shopping-item-column {
   display: flex;
+  align-items: center;
+}
+div.container .main-contents div.cart-table form .shop-item .cart-table-body ul .shopping-item-column > img {
+  width: 100px;
+}
+div.container .main-contents div.cart-table form .shop-item .cart-table-body ul .shopping-item-column > div {
+  padding-left: 1em;
+}
+div.container .main-contents div.cart-table form .button-field {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+div.container .main-contents div.cart-table form .button-field input:first-child {
+  margin-right: 10px;
+}
+div.container .main-contents div.cart-table form .button-field input:last-child {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=cart.css.map */

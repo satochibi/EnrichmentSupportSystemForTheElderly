@@ -1,6 +1,9 @@
 @import "common.scss";
 
 li.cart-table-body-list-item {
+    border-right: 1px solid rgb(160, 160, 160);
+    border-top: 1px solid rgb(160, 160, 160);
+
     &:nth-child(1) {
         width: 15%;
     }
@@ -12,12 +15,14 @@ li.cart-table-body-list-item {
     }
     &:nth-child(4) {
         width: 20%;
+        border-right: none;
     }
 }
 
 li.flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -62,10 +67,33 @@ div.container {
                                 }
                             }
 
-                            .item-column {
+                            .shopping-item-column {
                                 display: flex;
+                                align-items: center;
+                                
+                                & > img {
+                                    width: 100px;
+                                }
+                                & > div {
+                                    padding-left: 1em;
+                                }
                             }
                         }
+                    }
+                }
+
+                .button-field {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+
+                    input:first-child {
+                        margin-right: 10px;
+                    }
+
+                    input:last-child {
+                        margin-left: 10px;
                     }
                 }
             }

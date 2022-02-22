@@ -19,14 +19,7 @@ div.container {
             .button-field{
                 padding-bottom: 50px;
                 input[type="button"] {
-                    display: block;
-                    padding: 10px 20px;
                     margin: 0 auto;
-                    cursor: pointer;
-                    box-shadow: 0 3px 3px gray;
-                    border: 1px solid rgb(160, 160, 160);
-                    color: black;
-                    background-color: white;
                 }
             }
         }
@@ -93,7 +86,6 @@ div.container {
                         }
                     }
     
-    
                     .text-field textarea {
                         height: 10em;
                         width: 100%;
@@ -109,30 +101,12 @@ div.container {
                     display: flex;
                     justify-content: center;
                     
-                    input {
-                        height: auto;
-                        padding: 10px 20px;
-                        margin: 0 20px;
-                        cursor: pointer;
-                        box-shadow: 0 3px 3px gray;
+                    input:first-child {
+                        margin-right: 10px;
                     }
 
-                    input[type="button"] {
-                        border: 1px solid rgb(160, 160, 160);
-                        color: black;
-                        background-color: white;
-                    }
-
-                    input[type="reset"] {
-                        border: 1px solid rgb(160, 160, 160);
-                        color: black;
-                        background-color: white;
-                    }
-
-                    input[type="submit"] {
-                        border: none;
-                        color: white;
-                        background-color: rgb(58, 13, 164);
+                    input:last-child {
+                        margin-left: 10px;
                     }
                 }
 
@@ -155,15 +129,12 @@ div.container {
                             padding: 12px;
                             word-break: break-all;
                         }
-    
                     }
-
                 }
 
                 table, th, td {
                     border: 1px solid rgb(131, 131, 131);
                 }
-
                 
             }
         }

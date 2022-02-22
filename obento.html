@@ -265,6 +265,16 @@
         </footer>
     </div>
 
+    <script>
+        const buttonElements = document.getElementsByTagName("button");
+        Array.prototype.forEach.call(buttonElements, (anElement) => {
+            anElement.addEventListener('click', (e) => {
+                e.preventDefault();
+                location.href = "./cart.html";
+            });
+        });
+    </script>
+
 </body>
 
 </html>

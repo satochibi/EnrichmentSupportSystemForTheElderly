@@ -23,12 +23,12 @@
         <div class="breadcrumb-list">
             <ul>
                 <li><a href="./index.html">HOME</a></li>
-                <li><a href="#">ご注文内容</a></li>
+                <li><a href="#">買い物カゴ</a></li>
             </ul>
         </div>
 
         <div class="main-contents">
-            <h2>ご注文内容</h2>
+            <h2>買い物カゴ</h2>
 
             <div class="cart-table">
                 <form>
@@ -48,12 +48,15 @@
                                 <li class="cart-table-body-list-item flex-center">
                                     <div class="trash-icon"><i class="fas fa-trash-alt"></i></div>
                                 </li>
-                                <li class="cart-table-body-list-item item-column">
+                                <li class="cart-table-body-list-item shopping-item-column">
                                     <img src="./img/bento.png" alt="あ弁当">
-                                    <h4>あ弁当</h4>
-                                    <span>500円</span>
+                                    <div>
+                                        <h4>あ弁当</h4>
+                                        <p>500円</p>
+                                    </div>
+                                    
                                 </li>
-                                <li class="cart-table-body-list-item">
+                                <li class="cart-table-body-list-item flex-center">
                                     <select id="num" name="num">
                                         <option value="one">1個</option>
                                         <option value="two">2個</option>
@@ -67,7 +70,7 @@
                                         <option value="ten">10個</option>
                                     </select>
                                 </li>
-                                <li class="cart-table-body-list-item">
+                                <li class="cart-table-body-list-item flex-center">
                                     500円
                                 </li>
                             </ul>
@@ -75,6 +78,11 @@
                         <div>
 
                         </div>
+                    </div>
+
+                    <div class="button-field">
+                        <input type="button" value="買い物を続ける" onclick="location.href='./index.html'">
+                        <input type="submit" value="進む">
                     </div>
                 </form>
             </div>
@@ -94,6 +102,8 @@
 
         </footer>
     </div>
+
+    
 
 </body>
 

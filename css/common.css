@@ -9,6 +9,29 @@ img {
   clear: both;
 }
 
+.button-field input[type=button], .button-field input[type=reset], .button-field button[type=button], .button-field button[type=reset] {
+  display: block !important;
+  box-sizing: border-box !important;
+  padding: 10px !important;
+  border-radius: 2px !important;
+  cursor: pointer;
+  box-shadow: 0 3px 3px gray;
+  border: 1px solid #a0a0a0;
+  color: black;
+  background-color: white;
+}
+.button-field input[type=submit], .button-field button[type=submit] {
+  display: block !important;
+  box-sizing: border-box !important;
+  padding: 10px !important;
+  border-radius: 2px !important;
+  cursor: pointer;
+  box-shadow: 0 3px 3px gray;
+  border: none !important;
+  color: white;
+  background-color: #3a0da4;
+}
+
 div.container {
   max-width: 950px;
   margin: 0 auto;
