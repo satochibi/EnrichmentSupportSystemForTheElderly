@@ -143,14 +143,20 @@ div.container footer .ads {
   background-color: #bebebe;
 }
 
-div.container .main-contents div.message p {
-  margin: 0;
-  padding: 0 110px 50px;
+div.container .main-contents div.message {
+  margin: 0 110px;
 }
 @media only screen and (max-width: 600px) {
-  div.container .main-contents div.message p {
-    padding: 0 20px 50px;
+  div.container .main-contents div.message {
+    margin: 0 20px;
   }
+}
+div.container .main-contents div.message .order-number {
+  background-color: white;
+}
+div.container .main-contents div.message p {
+  margin: 0;
+  margin-bottom: 50px;
 }
 div.container .main-contents div.message p i.fas {
   padding: 0 6px;
@@ -160,6 +166,28 @@ div.container .main-contents div.message .button-field {
 }
 div.container .main-contents div.message .button-field input[type=button] {
   margin: 0 auto;
+}
+div.container .main-contents div.message table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  line-height: 1.5;
+}
+div.container .main-contents div.message table tr {
+  height: 60px;
+}
+div.container .main-contents div.message table tr th {
+  background-color: #e5e5e5;
+  text-align: center;
+  width: 40%;
+}
+div.container .main-contents div.message table tr td {
+  padding: 12px;
+  word-break: break-all;
+}
+div.container .main-contents div.message table, div.container .main-contents div.message th, div.container .main-contents div.message td {
+  border: 1px solid #a0a0a0;
 }
 div.container .main-contents div.contact-table {
   padding: 0 30px 50px;
@@ -182,7 +210,7 @@ div.container .main-contents div.contact-table form label, div.container .main-c
   box-sizing: border-box;
 }
 div.container .main-contents div.contact-table form input, div.container .main-contents div.contact-table form textarea {
-  border: 1px solid #767676;
+  border: 1px solid #a0a0a0;
   border-radius: 2px;
   padding: 10px;
 }
@@ -247,14 +275,14 @@ div.container .main-contents div.contact-table form table tr {
 div.container .main-contents div.contact-table form table tr th {
   background-color: #e5e5e5;
   text-align: center;
-  width: 20%;
+  width: 40%;
 }
 div.container .main-contents div.contact-table form table tr td {
   padding: 12px;
   word-break: break-all;
 }
 div.container .main-contents div.contact-table form table, div.container .main-contents div.contact-table form th, div.container .main-contents div.contact-table form td {
-  border: 1px solid #838383;
+  border: 1px solid #a0a0a0;
 }
 
 /*# sourceMappingURL=contact.css.map */

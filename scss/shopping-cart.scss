@@ -1,8 +1,8 @@
 @import "common.scss";
 
 li.cart-table-body-list-item {
-    border-right: 1px solid rgb(160, 160, 160);
-    border-top: 1px solid rgb(160, 160, 160);
+    border-right: 1px solid $border-color;
+    border-top: 1px solid $border-color;
 
     &:nth-child(1) {
         display: flex;
@@ -13,6 +13,8 @@ li.cart-table-body-list-item {
             width: 60px;
         }
     }
+
+
     &:nth-child(2) {
         display: flex;
         justify-content: flex-start;
@@ -60,12 +62,14 @@ div.container {
                     margin-right: 0;
                 }
                 .a-shop {
-                    border: 1px solid rgb(160, 160, 160);
+                    border: 1px solid $border-color;
                     background-color: white;
                     margin-bottom: 30px;
                     h3 {
                         margin: 0;
-                        background-color: #e5e5e5;
+                        background-color: $gray;
+                        padding: 20px;
+                        text-align: center;
                     }
                     .cart-table-heading{
                         ul {
@@ -123,7 +127,7 @@ div.container {
                     }
 
                     .cart-table-postage {
-                        border-top: 1px solid rgb(160, 160, 160);
+                        border-top: 1px solid $border-color;
                     }
 
                     .cart-table-postage, .cart-table-price{

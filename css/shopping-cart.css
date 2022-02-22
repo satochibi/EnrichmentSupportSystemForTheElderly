@@ -215,6 +215,8 @@ div.container .main-contents div.cart-table form .a-shop {
 div.container .main-contents div.cart-table form .a-shop h3 {
   margin: 0;
   background-color: #e5e5e5;
+  padding: 20px;
+  text-align: center;
 }
 div.container .main-contents div.cart-table form .a-shop .cart-table-heading ul {
   display: flex;
@@ -290,4 +292,4 @@ div.container .main-contents div.cart-table form .button-field input:last-child 
   margin-left: 10px;
 }
 
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=shopping-cart.css.map */
