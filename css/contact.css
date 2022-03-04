@@ -287,6 +287,11 @@ div.container .main-contents div.contact-table form .input-container .text-field
 div.container .main-contents div.contact-table form .input-container .grow-field {
   flex-basis: 100%;
 }
+div.container .main-contents div.contact-table form .input-container .information {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
 div.container .main-contents div.contact-table form .button-field {
   display: flex;
   justify-content: center;
