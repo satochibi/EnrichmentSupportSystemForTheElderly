@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>高齢者のお困り解決砥部町内サイト</title>
+    <title>高齢者のお困り解決砥部町内サービスサイト</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
 
                         <div class="input-field">
                             <label class="label" for="postal-code">郵便番号<small>必須</small></label>
-                            <input id="postal-code" type="text" name="postal-code" placeholder="791-2114" pattern="\d{3}-?\d{4}" required>
+                            <input id="postal-code" type="text" name="postal-code" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');" placeholder="791-2114" pattern="\d{3}-?\d{4}" required>
                         </div>
 
                         <div class="input-field grow-field">
