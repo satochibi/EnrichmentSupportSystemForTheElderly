@@ -75,15 +75,23 @@ div.container {
     // ヘッダー
     header {
         background-color: $orange;
+        margin: 0;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        @include sp{
+            padding: 12px 7px;
+        }
+
         h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 0;
-            padding: 25px;
 
             @include sp{
                 font-size: 18px;
-                padding: 12px 0;
-                padding-left: 7px;
-                margin: 0 auto;
             }
 
             a{
@@ -96,6 +104,27 @@ div.container {
                 }
             }
             
+        }
+
+        a.shopping-cart-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 5px 25px;
+            @include sp {
+                padding: 5px 14px;
+            }
+
+
+            font-size: 15px;
+            i.fas {
+                font-size: 2.2em;
+            }
         }
     }
 
