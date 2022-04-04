@@ -2,39 +2,171 @@
 
 // お弁当のテーブルスタイル
 div.container {
-    .main-contents{
-        div.shopping-table{
+    .main-contents {
+        div#search {
+            h3 {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            margin: 20px 0;
+
+            form {
+                background-color: white;
+                border: 1px solid rgb(221, 221, 221);
+                border-radius: 5px;
+                padding: 26px;
+                margin: 26px;
+                @include sp {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+
+                label, input, textarea, button{
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+
+                input, textarea {
+                    border: 1px solid $border-color;
+                    border-radius: 2px;
+                    padding: 10px;
+                }
+                .input-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .input-field{
+                        margin-bottom: 20px;
+                        flex-basis: 100%;
+
+                        input {
+                            height: 3em;
+                            width: 100%;
+                        }
+    
+                        label {
+                            color: black;
+                            font-weight: bold;
+                            margin-bottom: 7px;
+                        }
+    
+                        small {
+                            background-color: rgb(237, 0, 0);
+                            border-radius: 4px;
+                            color: white;
+                            padding: 2px 6px;
+                            font-weight: bold;
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        div#order {
+            h3 {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            form {
+                background-color: white;
+                border: 1px solid rgb(221, 221, 221);
+                border-radius: 5px;
+                padding: 26px;
+                margin: 26px;
+                @include sp {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+
+                label, input, textarea, button{
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+
+                input, textarea {
+                    border: 1px solid $border-color;
+                    border-radius: 2px;
+                    padding: 10px;
+                }
+                .input-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .input-field{
+                        margin-bottom: 20px;
+                        flex-basis: 48%;
+
+                        @include sp {
+                            flex-basis: 100%;
+                        }
+    
+                        input {
+                            height: 3em;
+                            width: 100%;
+                        }
+    
+                        label {
+                            color: black;
+                            font-weight: bold;
+                            margin-bottom: 7px;
+                        }
+    
+                        small {
+                            background-color: rgb(237, 0, 0);
+                            border-radius: 4px;
+                            color: white;
+                            padding: 2px 6px;
+                            font-weight: bold;
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.shopping-table {
             display: flex;
             justify-content: space-around;
             align-content: space-around;
             flex-wrap: wrap;
 
-            div.item-cell{
+            div.item-cell {
                 border: 1px solid rgb(160, 160, 160);
                 background-color: white;
                 width: 400px;
                 margin-bottom: 80px;
 
-                div.item-header{
+                div.item-header {
                     background-color: $btn-color;
                     color: white;
                     font-size: 26px;
                     margin: 40px 20px 15px;
                     padding: 10px;
 
-                    h3{
+                    h3 {
                         margin: 0;
                     }
                 }
 
-                div.item-body{
+                div.item-body {
                     margin: 0 40px 40px;
                     color: $btn-color;
+
                     h4 {
                         margin-top: 5px;
                         margin-bottom: 0;
                         font-size: 24px;
                     }
+
                     hr {
                         margin: 5px 0;
                         border: 2px solid $btn-color;
@@ -45,7 +177,7 @@ div.container {
                         letter-spacing: 0.3em;
                         font-size: 24px;
 
-                        .tax-text{
+                        .tax-text {
                             font-size: 50%;
                             letter-spacing: normal;
                         }
@@ -64,6 +196,7 @@ div.container {
                             letter-spacing: normal;
                             margin: 10px 0;
                             height: 6.5em;
+                            overflow: scroll;
                         }
 
                         button {
@@ -74,11 +207,12 @@ div.container {
                             color: $btn-color;
                             font-weight: bold;
                             cursor: pointer;
+
                             .cart-icon {
                                 padding: 0 10px;
                             }
 
-                            &:hover{
+                            &:hover {
                                 background-color: rgb(230, 230, 230);
                             }
                         }

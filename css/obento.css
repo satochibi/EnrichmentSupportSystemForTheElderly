@@ -178,6 +178,122 @@ div.container footer .ads a {
   margin: 10px 0;
 }
 
+div.container .main-contents div#search {
+  margin: 20px 0;
+}
+div.container .main-contents div#search h3 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+div.container .main-contents div#search form {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 26px;
+  margin: 26px;
+}
+@media only screen and (max-width: 600px) {
+  div.container .main-contents div#search form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+div.container .main-contents div#search form label, div.container .main-contents div#search form input, div.container .main-contents div#search form textarea, div.container .main-contents div#search form button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div.container .main-contents div#search form input, div.container .main-contents div#search form textarea {
+  border: 1px solid #a0a0a0;
+  border-radius: 2px;
+  padding: 10px;
+}
+div.container .main-contents div#search form .input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div.container .main-contents div#search form .input-container .input-field {
+  margin-bottom: 20px;
+  flex-basis: 100%;
+}
+div.container .main-contents div#search form .input-container .input-field input {
+  height: 3em;
+  width: 100%;
+}
+div.container .main-contents div#search form .input-container .input-field label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+div.container .main-contents div#search form .input-container .input-field small {
+  background-color: #ed0000;
+  border-radius: 4px;
+  color: white;
+  padding: 2px 6px;
+  font-weight: bold;
+  margin: 0 4px;
+}
+div.container .main-contents div#order h3 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+div.container .main-contents div#order form {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 26px;
+  margin: 26px;
+}
+@media only screen and (max-width: 600px) {
+  div.container .main-contents div#order form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+div.container .main-contents div#order form label, div.container .main-contents div#order form input, div.container .main-contents div#order form textarea, div.container .main-contents div#order form button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div.container .main-contents div#order form input, div.container .main-contents div#order form textarea {
+  border: 1px solid #a0a0a0;
+  border-radius: 2px;
+  padding: 10px;
+}
+div.container .main-contents div#order form .input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div.container .main-contents div#order form .input-container .input-field {
+  margin-bottom: 20px;
+  flex-basis: 48%;
+}
+@media only screen and (max-width: 600px) {
+  div.container .main-contents div#order form .input-container .input-field {
+    flex-basis: 100%;
+  }
+}
+div.container .main-contents div#order form .input-container .input-field input {
+  height: 3em;
+  width: 100%;
+}
+div.container .main-contents div#order form .input-container .input-field label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+div.container .main-contents div#order form .input-container .input-field small {
+  background-color: #ed0000;
+  border-radius: 4px;
+  color: white;
+  padding: 2px 6px;
+  font-weight: bold;
+  margin: 0 4px;
+}
 div.container .main-contents div.shopping-table {
   display: flex;
   justify-content: space-around;
@@ -234,6 +350,7 @@ div.container .main-contents div.shopping-table div.item-cell div.item-body form
   letter-spacing: normal;
   margin: 10px 0;
   height: 6.5em;
+  overflow: scroll;
 }
 div.container .main-contents div.shopping-table div.item-cell div.item-body form button {
   width: 100%;

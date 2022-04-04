@@ -29,6 +29,40 @@
         <div class="main-contents">
             <h2>雑誌の宅配サービス</h2>
 
+            <div id="search">
+                <form action="">
+                    <h3>商品検索</h3>
+                    <div class="input-container">
+                        <div class="input-field">
+                            <input name="item-name" type="text" placeholder="商品名を検索できます">
+                        </div>
+                    </div>
+                    <div class="button-field">
+                        <input type="submit" value="検索">
+                    </div>
+                </form>
+            </div>
+
+            <div id="order">
+                <form action="">
+                    <h3>書籍購入の申込</h3>
+                    <div class="input-container">
+                        <div class="input-field">
+                            <label for="name">お名前</label>
+                            <input type="text" name="name" placeholder="砥部 花子">
+                        </div>
+                        <div class="input-field">
+                            <label for="phone-number">電話番号</label>
+                            <input type="text" name="phone-number" placeholder="089-982-0001"
+                                pattern="\d{2,4}-?\d{2,4}-?\d{3,4}">
+                        </div>
+                    </div>
+                    <div class="button-field">
+                        <input type="submit" value="申込">
+                    </div>
+                </form>
+            </div>
+
             <div class="shopping-table">
                 <div class="item-cell">
                     <div class="item-header">
