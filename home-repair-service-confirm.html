@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+
 </head>
 
 
@@ -30,7 +30,10 @@
         </div>
 
         <div class="main-contents">
-            <h2>お問い合わせを以下の内容で送信しますか?</h2>
+            <h2>お家の修理サービス送信確認</h2>
+            <div class="no-item-message">
+                <p>以下の内容で送信しますか?</p>
+            </div>
 
             <div class="contact-table">
                 <form>
@@ -55,7 +58,8 @@
                         </tbody>
                     </table>
                     <div class="button-field">
-                        <input type="button" onclick="location.href='./home-repair-service-contact.html'" value="入力画面に戻る">
+                        <input type="button" onclick="location.href='./home-repair-service-contact.html'"
+                            value="入力画面に戻る">
                         <input type="submit" id="submit" value="送信">
                     </div>
 
@@ -82,7 +86,7 @@
         const submitBtn = document.getElementById('submit');
         submitBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            location.href='./home-repair-service-complete.html';
+            location.href = './home-repair-service-complete.html';
         });
     </script>
 </body>
