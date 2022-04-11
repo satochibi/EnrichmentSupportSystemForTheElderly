@@ -29,19 +29,34 @@
         <div class="main-contents">
             <h2>特産品の宅配サービス</h2>
 
-            <div id="search">
+            <div id="order">
                 <form action="">
-                    <h3>商品検索</h3>
+                    <h3>特産品購入の申込</h3>
                     <div class="input-container">
                         <div class="input-field">
-                            <input name="item-name" type="text" placeholder="商品名を検索できます">
+                            <label for="name">お名前</label>
+                            <input type="text" name="name" placeholder="砥部 花子">
+                        </div>
+                        <div class="input-field">
+                            <label for="phone-number">電話番号</label>
+                            <input type="text" name="phone-number" placeholder="089-982-0001"
+                                pattern="\d{2,4}-?\d{2,4}-?\d{3,4}">
+                        </div>
+                        <div class="input-field grow-field">
+                            <label for="name">商品名</label>
+                            <input type="text" name="name" placeholder="取り寄せる商品名">
+                        </div>
+                        <div class="message grow-field">
+                            申込み後、担当者より連絡いたします
+                        </div>
+                        <div class="button-field grow-field" id="order-button">
+                            <input type="submit" value="申込">
                         </div>
                     </div>
-                    <div class="button-field">
-                        <input type="submit" value="検索">
-                    </div>
+
                 </form>
             </div>
+
 
             <div class="shopping-table">
                 <div class="item-cell">
@@ -280,6 +295,15 @@
     </div>
 
     <script>
+        const orderButton = document.getElementById("order-button");
+        orderButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const answer = confirm('この商品を取り寄せますか?');
+            if (answer) {
+                location.href = "./order-complete.html";
+            }
+        });
+
         const buttonElements = document.getElementsByTagName("button");
         Array.prototype.forEach.call(buttonElements, (anElement) => {
             anElement.addEventListener('click', (e) => {

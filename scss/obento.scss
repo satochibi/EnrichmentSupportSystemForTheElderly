@@ -3,69 +3,6 @@
 // お弁当のテーブルスタイル
 div.container {
     .main-contents {
-        div#search {
-            h3 {
-                margin: 0;
-                margin-bottom: 20px;
-            }
-            margin: 20px 0;
-
-            form {
-                background-color: white;
-                border: 1px solid rgb(221, 221, 221);
-                border-radius: 5px;
-                padding: 26px;
-                margin: 26px;
-                @include sp {
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-
-
-                label, input, textarea, button{
-                    display: block;
-                    padding: 0;
-                    margin: 0;
-                    box-sizing: border-box;
-                }
-
-                input, textarea {
-                    border: 1px solid $border-color;
-                    border-radius: 2px;
-                    padding: 10px;
-                }
-                .input-container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-
-                    .input-field{
-                        margin-bottom: 20px;
-                        flex-basis: 100%;
-
-                        input {
-                            height: 3em;
-                            width: 100%;
-                        }
-    
-                        label {
-                            color: black;
-                            font-weight: bold;
-                            margin-bottom: 7px;
-                        }
-    
-                        small {
-                            background-color: rgb(237, 0, 0);
-                            border-radius: 4px;
-                            color: white;
-                            padding: 2px 6px;
-                            font-weight: bold;
-                            margin: 0 4px;
-                        }
-                    }
-                }
-            }
-        }
 
         div#order {
             h3 {
@@ -96,6 +33,14 @@ div.container {
                     border-radius: 2px;
                     padding: 10px;
                 }
+
+                .message {
+                    margin-bottom: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: red;
+                }
+
                 .input-container {
                     display: flex;
                     flex-wrap: wrap;
@@ -127,6 +72,23 @@ div.container {
                             padding: 2px 6px;
                             font-weight: bold;
                             margin: 0 4px;
+                        }
+                    }
+
+                    .grow-field {
+                        flex-basis: 100%;
+                    }
+
+                    .button-field {
+                        display: flex;
+                        justify-content: center;
+                        
+                        input:first-child {
+                            margin-right: 10px;
+                        }
+    
+                        input:last-child {
+                            margin-left: 10px;
                         }
                     }
                 }

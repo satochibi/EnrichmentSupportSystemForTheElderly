@@ -6,7 +6,7 @@
   "scripts": {
     "start": "lite-server",
     "scss": "sass scss/:css/ --style expanded --watch",
-    "json-server": "json-server --watch db.json --p 3001"
+    "json-server": "json-server --watch db.json --p 3010"
   },
   "repository": {
     "type": "git",

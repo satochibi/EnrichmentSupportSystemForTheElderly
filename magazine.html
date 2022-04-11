@@ -32,20 +32,6 @@
         <div class="main-contents">
             <h2>雑誌の宅配サービス</h2>
 
-            <div id="search">
-                <form action="">
-                    <h3>商品検索</h3>
-                    <div class="input-container">
-                        <div class="input-field">
-                            <input name="item-name" type="text" placeholder="商品名を検索できます">
-                        </div>
-                    </div>
-                    <div class="button-field">
-                        <input type="submit" value="検索">
-                    </div>
-                </form>
-            </div>
-
             <div id="order">
                 <form action="">
                     <h3>書籍購入の申込</h3>
@@ -59,15 +45,23 @@
                             <input type="text" name="phone-number" placeholder="089-982-0001"
                                 pattern="\d{2,4}-?\d{2,4}-?\d{3,4}">
                         </div>
+                        <div class="input-field grow-field">
+                            <label for="name">商品名</label>
+                            <input type="text" name="name" placeholder="取り寄せる商品名">
+                        </div>
+                        <div class="message grow-field">
+                            申込み後、担当者より連絡いたします
+                        </div>
+                        <div class="button-field grow-field" id="order-button">
+                            <input type="submit" value="申込">
+                        </div>
                     </div>
-                    <div class="button-field">
-                        <input type="submit" value="申込">
-                    </div>
+
                 </form>
             </div>
 
             <div class="shopping-table">
-                <!-- <div class="item-cell">
+                <div class="item-cell">
                     <div class="item-header">
                         <h3>店舗あいうえお</h3>
                         <span>本屋</span>
@@ -106,9 +100,132 @@
                         </form>
                     </div>
                 </div>
-                 -->
+
+                <div class="item-cell">
+                    <div class="item-header">
+                        <h3>店舗かきくけこ</h3>
+                        <span>本屋</span>
+                    </div>
+
+                    <div class="item-body">
+                        <img src="img/zasshi.jpg" alt="か雑誌">
+                        <h4>か雑誌</h4>
+                        <hr>
+                        <form>
+                            <div class="clearfix menu-list">
+                                <label for="large">400円<span class="tax-text">(税込)</span></label>
+                                <select id="large" name="large">
+                                    <option value="one">1冊</option>
+                                    <option value="two">2冊</option>
+                                    <option value="three">3冊</option>
+                                    <option value="four">4冊</option>
+                                    <option value="five">5冊</option>
+                                    <option value="six">6冊</option>
+                                    <option value="seven">7冊</option>
+                                    <option value="eight">8冊</option>
+                                    <option value="nine">9冊</option>
+                                    <option value="ten">10冊</option>
+                                </select>
+                            </div>
+
+                            <div class="detail">
+                                つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、
+                                そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）
+                                つれづれなるまゝに、日暮らし、硯にむかひて、
+                            </div>
+
+                            <button type="submit">
+                                <i class="cart-icon fas fa-cart-arrow-down"></i>カゴに入れる
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="item-cell">
+                    <div class="item-header">
+                        <h3>店舗さしすせそ</h3>
+                        <span>本屋</span>
+                    </div>
+
+                    <div class="item-body">
+                        <img src="img/zasshi.jpg" alt="さ雑誌">
+                        <h4>さ雑誌</h4>
+                        <hr>
+                        <form>
+                            <div class="clearfix menu-list">
+                                <label for="large">550円<span class="tax-text">(税込)</span></label>
+                                <select id="large" name="large">
+                                    <option value="one">1冊</option>
+                                    <option value="two">2冊</option>
+                                    <option value="three">3冊</option>
+                                    <option value="four">4冊</option>
+                                    <option value="five">5冊</option>
+                                    <option value="six">6冊</option>
+                                    <option value="seven">7冊</option>
+                                    <option value="eight">8冊</option>
+                                    <option value="nine">9冊</option>
+                                    <option value="ten">10冊</option>
+                                </select>
+                            </div>
+
+                            <div class="detail">
+                                つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、
+                                そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）
+                                つれづれなるまゝに、日暮らし、硯にむかひて、
+                            </div>
+
+                            <button type="submit">
+                                <i class="cart-icon fas fa-cart-arrow-down"></i>カゴに入れる
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="item-cell">
+                    <div class="item-header">
+                        <h3>店舗たちつてと</h3>
+                        <span>本屋</span>
+                    </div>
+
+                    <div class="item-body">
+                        <img src="img/zasshi.jpg" alt="た雑誌">
+                        <h4>た雑誌</h4>
+                        <hr>
+                        <form>
+                            <div class="clearfix menu-list">
+                                <label for="large">300円<span class="tax-text">(税込)</span></label>
+                                <select id="large" name="large">
+                                    <option value="one">1冊</option>
+                                    <option value="two">2冊</option>
+                                    <option value="three">3冊</option>
+                                    <option value="four">4冊</option>
+                                    <option value="five">5冊</option>
+                                    <option value="six">6冊</option>
+                                    <option value="seven">7冊</option>
+                                    <option value="eight">8冊</option>
+                                    <option value="nine">9冊</option>
+                                    <option value="ten">10冊</option>
+                                </select>
+                            </div>
+
+                            <div class="detail">
+                                つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、
+                                そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）
+                                つれづれなるまゝに、日暮らし、硯にむかひて、
+                            </div>
+
+                            <button type="submit">
+                                <i class="cart-icon fas fa-cart-arrow-down"></i>カゴに入れる
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
+
+
 
 
         <footer>
@@ -125,6 +242,16 @@
     </div>
 
     <script>
+        const orderButton = document.getElementById("order-button");
+        orderButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const answer = confirm('この商品を取り寄せますか?');
+            if (answer) {
+                location.href = "./order-complete.html";
+            }
+        });
+
+
         const buttonElements = document.getElementsByTagName("button");
         Array.prototype.forEach.call(buttonElements, (anElement) => {
             anElement.addEventListener('click', (e) => {
@@ -132,6 +259,8 @@
                 location.href = "./shopping-cart.html";
             });
         });
+
+
     </script>
 
     <script>
@@ -139,7 +268,7 @@
         $(() => {
             //ajax関数
             const ajaxGetAPI = (callBack) => {
-                const baseURL = "http://localhost:3001/goods";
+                const baseURL = "http://localhost:3010/goods";
                 const params = {
                     dataType: "json",
                     type: "GET",
