@@ -7,7 +7,8 @@
         border-spacing: 0;
         border-collapse: collapse;
         line-height: 1.5;
-        tr{
+
+        tr {
             height: 60px;
 
             th {
@@ -23,7 +24,9 @@
         }
     }
 
-    table, th, td {
+    table,
+    th,
+    td {
         border: 1px solid $border-color;
     }
 }
@@ -31,10 +34,11 @@
 
 // お問い合わせのテーブルスタイル
 div.container {
-    .main-contents{
-        
-        div.message{
+    .main-contents {
+
+        div.message {
             margin: 0 110px;
+
             @include sp {
                 margin: 0 20px;
             }
@@ -46,23 +50,25 @@ div.container {
             p {
                 margin: 0;
                 margin-bottom: 50px;
-                i.fas{
+
+                i.fas {
                     padding: 0 6px;
                 }
             }
 
-            .button-field{
+            .button-field {
                 padding-bottom: 50px;
+
                 input[type="button"] {
                     margin: 0 auto;
                 }
             }
 
             @include table-style;
-            
+
         }
 
-        div.contact-table{
+        div.contact-table {
             padding: 0 30px 50px;
 
             @include sp {
@@ -75,43 +81,57 @@ div.container {
                 border-radius: 5px;
                 padding: 26px;
 
-                label, input, textarea, button{
+                label,
+                input,
+                textarea,
+                button {
                     display: block;
                     padding: 0;
                     margin: 0;
                     box-sizing: border-box;
                 }
 
-                input, textarea {
+                .inline-block {
+                    display: inline-block;
+                }
+
+                input,
+                textarea {
                     border: 1px solid $border-color;
                     border-radius: 2px;
                     padding: 10px;
                 }
 
-                .input-container{
+                
+
+                .input-container {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
 
-                    .input-field{
+                    .input-field {
                         margin-bottom: 20px;
                         flex-basis: 48%;
 
                         @include sp {
                             flex-basis: 100%;
                         }
-    
-                        input {
+
+                        input[type='submit'],
+                        input[type='reset'],
+                        input[type='button'],
+                        input[type='text'],
+                        input[type='email'] {
                             height: 3em;
                             width: 100%;
                         }
-    
+
                         label {
                             color: black;
                             font-weight: bold;
                             margin-bottom: 7px;
                         }
-    
+
                         small {
                             background-color: rgb(237, 0, 0);
                             border-radius: 4px;
@@ -121,7 +141,7 @@ div.container {
                             margin: 0 4px;
                         }
                     }
-    
+
                     .text-field textarea {
                         height: 10em;
                         width: 100%;
@@ -142,7 +162,7 @@ div.container {
                 .button-field {
                     display: flex;
                     justify-content: center;
-                    
+
                     input:first-child {
                         margin-right: 10px;
                     }
@@ -152,8 +172,13 @@ div.container {
                     }
                 }
 
+
+                .delivery-destination{
+                    display: none;
+                }
+
                 @include table-style;
-                
+
             }
         }
     }

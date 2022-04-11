@@ -221,7 +221,9 @@ div.container .main-contents div.message table tr td {
   padding: 12px;
   word-break: break-all;
 }
-div.container .main-contents div.message table, div.container .main-contents div.message th, div.container .main-contents div.message td {
+div.container .main-contents div.message table,
+div.container .main-contents div.message th,
+div.container .main-contents div.message td {
   border: 1px solid #a0a0a0;
 }
 div.container .main-contents div.contact-table {
@@ -238,13 +240,20 @@ div.container .main-contents div.contact-table form {
   border-radius: 5px;
   padding: 26px;
 }
-div.container .main-contents div.contact-table form label, div.container .main-contents div.contact-table form input, div.container .main-contents div.contact-table form textarea, div.container .main-contents div.contact-table form button {
+div.container .main-contents div.contact-table form label,
+div.container .main-contents div.contact-table form input,
+div.container .main-contents div.contact-table form textarea,
+div.container .main-contents div.contact-table form button {
   display: block;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-div.container .main-contents div.contact-table form input, div.container .main-contents div.contact-table form textarea {
+div.container .main-contents div.contact-table form .inline-block {
+  display: inline-block;
+}
+div.container .main-contents div.contact-table form input,
+div.container .main-contents div.contact-table form textarea {
   border: 1px solid #a0a0a0;
   border-radius: 2px;
   padding: 10px;
@@ -263,7 +272,11 @@ div.container .main-contents div.contact-table form .input-container .input-fiel
     flex-basis: 100%;
   }
 }
-div.container .main-contents div.contact-table form .input-container .input-field input {
+div.container .main-contents div.contact-table form .input-container .input-field input[type=submit],
+div.container .main-contents div.contact-table form .input-container .input-field input[type=reset],
+div.container .main-contents div.contact-table form .input-container .input-field input[type=button],
+div.container .main-contents div.contact-table form .input-container .input-field input[type=text],
+div.container .main-contents div.contact-table form .input-container .input-field input[type=email] {
   height: 3em;
   width: 100%;
 }
@@ -302,6 +315,9 @@ div.container .main-contents div.contact-table form .button-field input:first-ch
 div.container .main-contents div.contact-table form .button-field input:last-child {
   margin-left: 10px;
 }
+div.container .main-contents div.contact-table form .delivery-destination {
+  display: none;
+}
 div.container .main-contents div.contact-table form table {
   width: 100%;
   margin-bottom: 20px;
@@ -321,7 +337,9 @@ div.container .main-contents div.contact-table form table tr td {
   padding: 12px;
   word-break: break-all;
 }
-div.container .main-contents div.contact-table form table, div.container .main-contents div.contact-table form th, div.container .main-contents div.contact-table form td {
+div.container .main-contents div.contact-table form table,
+div.container .main-contents div.contact-table form th,
+div.container .main-contents div.contact-table form td {
   border: 1px solid #a0a0a0;
 }
 
