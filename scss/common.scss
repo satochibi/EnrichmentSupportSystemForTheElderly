@@ -25,9 +25,9 @@ img {
 }
 
 .clearfix::after {
-   content: "";
-   display: block;
-   clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
 
 
@@ -56,11 +56,16 @@ img {
 }
 
 .button-field {
-    input[type="button"], input[type="reset"], button[type="button"], button[type="reset"] {
+
+    input[type="button"],
+    input[type="reset"],
+    button[type="button"],
+    button[type="reset"] {
         @include form-normal-button;
     }
 
-    input[type="submit"], button[type="submit"] {
+    input[type="submit"],
+    button[type="submit"] {
         @include form-primary-button;
     }
 }
@@ -80,21 +85,23 @@ div.container {
         display: flex;
         justify-content: space-between;
 
-        @include sp{
+        @include sp {
             padding: 12px 7px;
         }
 
         h1 {
+            font-size: 1.5em;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0;
+            line-height: 150%;
 
-            @include sp{
-                font-size: 18px;
+            @include sp {
+                font-size: 14px;
             }
 
-            a{
+            a {
                 color: black;
                 text-decoration: none;
 
@@ -103,44 +110,116 @@ div.container {
                     font-size: 120%;
                 }
             }
-            
+
         }
 
-        a.shopping-cart-button {
+        .header-buttons {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            text-decoration: none;
-            color: white;
-            border: 2px solid white;
-            border-radius: 5px;
-            padding: 5px 25px;
+            font-size: 22px;
             @include sp {
-                padding: 5px 14px;
+                font-size: 12px;
             }
 
-
-            font-size: 15px;
-            i.fas {
-                font-size: 2.2em;
+            .shopping-cart{
+                position:relative;
+                .shopping-count-badge {
+                    display: block;
+                    position: absolute;
+                    right: -10px;
+                    top: -10px;
+                    @include sp {
+                        right: -5px;
+                        top: -5px;
+                    }
+                    background-color: #ad0000;
+                    color: white;
+                    border-radius: 50%;
+                    padding: 1px 0.25em;
+                }
             }
+
+            .shopping-cart-button {
+                width: 212px;
+                @include sp {
+                    width: 122px;
+                }
+                display: block;
+                box-sizing: border-box;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+                padding: 2px;
+                background: linear-gradient(#f6f6f6, #d9d9d9);
+                border: #8c7f74 solid 1px;
+                border-radius: 2px;
+
+                i {
+                    color: #ba4a00;
+                    padding-right: 5px;
+                }
+            }
+
+            .avatar-button{
+                width: 212px;
+                @include sp {
+                    width: 122px;
+                }
+                display: block;
+                box-sizing: border-box;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+                padding: 2px;
+                background: linear-gradient(#f6f6f6, #d9d9d9);
+                border: #8c7f74 solid 1px;
+                border-radius: 2px;
+                i {
+                    color: #f38900;
+                    padding-left: 2px;
+                    padding-right: 3px;
+                }
+            }
+
         }
+
+        // a.shopping-cart-button {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-around;
+        //     align-items: center;
+        //     text-decoration: none;
+        //     color: white;
+        //     border: 2px solid white;
+        //     border-radius: 5px;
+        //     padding: 5px 25px;
+        //     @include sp {
+        //         padding: 5px 14px;
+        //     }
+
+
+        //     font-size: 15px;
+        //     i.fas {
+        //         font-size: 2.2em;
+        //     }
+        // }
     }
 
     // バナー
-    .banner{
-        img{
+    .banner {
+        img {
             width: 100%;
             display: block;
         }
     }
 
     // パンくずリスト
-    .breadcrumb-list{
+    .breadcrumb-list {
         background-color: $black;
 
-        ul{
+        ul {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -149,30 +228,31 @@ div.container {
 
             li {
                 text-align: right;
-                a{
+
+                a {
                     color: white;
                     text-decoration: none;
                 }
 
-                & + li::before{
+                &+li::before {
                     content: '>';
                     color: white;
                     margin: 0 5px;
                 }
-                
+
             }
 
-            
+
         }
-        
+
     }
 
 
     // body-main
-    .main-contents{
+    .main-contents {
         background-color: rgb(254, 247, 233);
 
-        h2{
+        h2 {
             position: relative;
             margin-top: 0;
             margin-bottom: 2em;
@@ -182,7 +262,7 @@ div.container {
             font-size: 2em;
             text-align: center;
 
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
                 left: 50%;
@@ -203,18 +283,21 @@ div.container {
             }
         }
 
-        div.no-item-message{
+        div.no-item-message {
             p {
                 margin: 0;
                 padding: 0 110px 50px;
+
                 @include sp {
                     padding: 0 20px 50px;
                 }
+
                 text-align: center;
                 font-weight: bold;
                 color: red;
                 font-size: 20px;
-                i.fas{
+
+                i.fas {
                     padding: 0 6px;
                 }
             }
@@ -222,7 +305,7 @@ div.container {
     }
 
     // フッター
-    footer{
+    footer {
         .footer-logo {
             text-align: center;
             font-size: 25px;
@@ -237,6 +320,7 @@ div.container {
             justify-content: space-around;
             align-items: center;
             background-color: rgb(190, 190, 190);
+
             a {
                 display: block;
                 box-sizing: border-box;
