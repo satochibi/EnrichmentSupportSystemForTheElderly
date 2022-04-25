@@ -59,7 +59,7 @@ div.container {
             .button-field {
                 padding-bottom: 50px;
 
-                input[type="button"] {
+                button {
                     margin: 0 auto;
                 }
             }
@@ -117,9 +117,7 @@ div.container {
                             flex-basis: 100%;
                         }
 
-                        input[type='submit'],
-                        input[type='reset'],
-                        input[type='button'],
+                    
                         input[type='text'],
                         input[type='email'] {
                             height: 3em;
@@ -161,14 +159,15 @@ div.container {
 
                 .button-field {
                     display: flex;
-                    justify-content: center;
-
-                    input:first-child {
-                        margin-right: 10px;
-                    }
-
-                    input:last-child {
-                        margin-left: 10px;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    flex-wrap: wrap;
+                    button {
+                        flex-basis: 49%;
+                        margin-bottom: 20px;
+                        @include sp{
+                            flex-basis: 100%;
+                        }
                     }
                 }
 

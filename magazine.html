@@ -60,7 +60,7 @@
                             申込み後、担当者より連絡いたします
                         </div>
                         <div class="button-field grow-field" id="order-button">
-                            <input type="submit" value="申込">
+                            <button class="form-primary-button" type="submit">申込</button>
                         </div>
                     </div>
 
@@ -101,7 +101,7 @@
                                 つれづれなるまゝに、日暮らし、硯にむかひて、
                             </div>
 
-                            <button type="submit">
+                            <button class="cart-button" type="submit">
                                 <i class="cart-icon fas fa-cart-arrow-down"></i>カゴに入れる
                             </button>
                         </form>
@@ -141,7 +141,7 @@
                                 つれづれなるまゝに、日暮らし、硯にむかひて、
                             </div>
 
-                            <button type="submit">
+                            <button class="cart-button" type="submit">
                                 <i class="cart-icon fas fa-cart-arrow-down"></i>カゴに入れる
                             </button>
                         </form>
@@ -181,7 +181,7 @@
                                 つれづれなるまゝに、日暮らし、硯にむかひて、
                             </div>
 
-                            <button type="submit">
+                            <button class="cart-button" type="submit">
                                 <i class="cart-icon fas fa-cart-arrow-down"></i>カゴに入れる
                             </button>
                         </form>
@@ -222,7 +222,7 @@
                                 つれづれなるまゝに、日暮らし、硯にむかひて、
                             </div>
 
-                            <button type="submit">
+                            <button class="cart-button" type="submit">
                                 <i class="cart-icon fas fa-cart-arrow-down"></i>カゴに入れる
                             </button>
                         </form>
@@ -259,7 +259,7 @@
         });
 
 
-        const buttonElements = document.getElementsByTagName("button");
+        const buttonElements = document.getElementsByClassName("cart-button");
         Array.prototype.forEach.call(buttonElements, (anElement) => {
             anElement.addEventListener('click', (e) => {
                 e.preventDefault();

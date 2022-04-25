@@ -35,39 +35,98 @@ img {
 @mixin form-button {
     display: block !important;
     box-sizing: border-box !important;
-    padding: 10px !important;
-    border-radius: 2px !important;
+    // padding: 10px !important;
+    border-radius: 15px !important;
     cursor: pointer;
     box-shadow: 0 3px 3px gray;
+    width: 100%;
+    padding: 0 50px !important;
+    height: 93px;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
 @mixin form-normal-button {
     @include form-button;
-    border: 1px solid rgb(160, 160, 160);
+    border: 1px solid #7f7f7f !important;
     color: black;
-    background-color: white;
+    background: linear-gradient(#fff, #ececec);
 }
 
 @mixin form-primary-button {
     @include form-button;
-    border: none !important;
+    border: #0c0066 1px solid !important;
     color: white;
-    background-color: rgb(58, 13, 164);
+    background: linear-gradient(#4947b9, #171573);
 }
+
+@mixin form-secondary-button {
+    @include form-button;
+    border: #47041d 1px solid !important;
+    color: white;
+    background: linear-gradient(#b23a3a, #7e1b1b);
+}
+
+@mixin next-arrow-button($color) {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 0;
+    border-top: solid 2px $color;
+    border-right: solid 2px $color;
+    transform: rotate(45deg);
+}
+
+@mixin prev-arrow-button($color) {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 0;
+    border-bottom: solid 2px $color;
+    border-left: solid 2px $color;
+    transform: rotate(45deg);
+}
+
 
 .button-field {
 
-    input[type="button"],
-    input[type="reset"],
-    button[type="button"],
-    button[type="reset"] {
+    .form-normal-button {
         @include form-normal-button;
     }
 
-    input[type="submit"],
-    button[type="submit"] {
+    .form-primary-button {
         @include form-primary-button;
     }
+
+    .form-secondary-button {
+        @include form-secondary-button;
+    }
+
+    .next-arrow-button {
+        position: relative;
+
+        &::after {
+            @include next-arrow-button(#fff);
+        }
+    }
+
+    .prev-arrow-button {
+        position: relative;
+
+        &::before {
+            @include prev-arrow-button(#f69727);
+        }
+    }
+
+
 }
 
 
@@ -119,21 +178,25 @@ div.container {
             justify-content: space-between;
             align-items: center;
             font-size: 22px;
+
             @include sp {
                 font-size: 12px;
             }
 
-            .shopping-cart{
-                position:relative;
+            .shopping-cart {
+                position: relative;
+
                 .shopping-count-badge {
                     display: block;
                     position: absolute;
                     right: -10px;
                     top: -10px;
+
                     @include sp {
                         right: -5px;
                         top: -5px;
                     }
+
                     background-color: #ad0000;
                     color: white;
                     border-radius: 50%;
@@ -143,9 +206,11 @@ div.container {
 
             .shopping-cart-button {
                 width: 212px;
+
                 @include sp {
                     width: 122px;
                 }
+
                 display: block;
                 box-sizing: border-box;
                 font-weight: bold;
@@ -162,11 +227,13 @@ div.container {
                 }
             }
 
-            .avatar-button{
+            .avatar-button {
                 width: 212px;
+
                 @include sp {
                     width: 122px;
                 }
+
                 display: block;
                 box-sizing: border-box;
                 font-weight: bold;
@@ -176,6 +243,7 @@ div.container {
                 background: linear-gradient(#f6f6f6, #d9d9d9);
                 border: #8c7f74 solid 1px;
                 border-radius: 2px;
+
                 i {
                     color: #f38900;
                     padding-left: 2px;

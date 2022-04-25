@@ -146,16 +146,20 @@ div.container {
 
                 .button-field {
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    flex-wrap: wrap;
+
                     padding-top: 50px;
                     padding-bottom: 50px;
 
-                    input:first-child {
-                        margin-right: 10px;
-                    }
+                    button {
+                        flex-basis: 49%;
+                        margin-bottom: 20px;
 
-                    input:last-child {
-                        margin-left: 10px;
+                        @include sp{
+                            flex-basis: 100%;
+                        }
                     }
                 }
             }
