@@ -428,6 +428,9 @@ div.container .main-contents div.contact-table form .button-field button {
     flex-basis: 100%;
   }
 }
+div.container .main-contents div.contact-table form .button-field .grow-field {
+  flex-basis: 100%;
+}
 div.container .main-contents div.contact-table form .delivery-destination {
   display: none;
 }

@@ -8,7 +8,9 @@
     <title>高齢者のお困り解決砥部町内サービスサイト</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -19,7 +21,8 @@
             <div class="header-buttons">
                 <div class="shopping-cart">
                     <span class="shopping-count-badge">3</span>
-                    <a href="./shopping-cart.html" class="shopping-cart-button"><i class="fas fa-shopping-cart"></i>買い物カゴを見る</a>
+                    <a href="./shopping-cart.html" class="shopping-cart-button"><i
+                            class="fas fa-shopping-cart"></i>買い物カゴを見る</a>
                 </div>
                 <a href="./login.html" class="avatar-button"><i class="fa-solid fa-user"></i>会員の方はこちら</a>
             </div>
@@ -29,38 +32,39 @@
         <div class="breadcrumb-list">
             <ul>
                 <li><a href="./index.html">HOME</a></li>
-                <li><a href="#">お家の修理入力</a></li>
+                <li><a href="#">お問い合わせ入力</a></li>
             </ul>
         </div>
 
         <div class="main-contents">
-            <h2>お家の修理サービス</h2>
-
+            <h2>ログイン</h2>
             <div class="contact-table">
                 <form>
+                    <h3>会員のお客様</h3>
                     <div class="input-container">
-                        <div class="input-field">
-                            <label class="label" for="name">お名前<small>必須</small></label>
-                            <input id="name" type="text" name="name" placeholder="砥部 花子" required>
-                        </div>
-                        <div class="input-field">
-                            <label class="label" for="furigana">ふりがな<small>必須</small></label>
-                            <input id="furigana" type="text" name="furigana" placeholder="とべ はなこ"
-                                pattern="(?=.*?[\u3041-\u309F])[\u3041-\u309F\s]*" required>
-                        </div>
                         <div class="input-field">
                             <label class="label" for="phone-number">電話番号<small>必須</small></label>
                             <input id="phone-number" type="text" name="phone-number" placeholder="089-982-0001"
                                 pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" required>
                         </div>
                         <div class="input-field">
-                            <label class="label" for="e-mail">メールアドレス<small>必須</small></label>
-                            <input id="e-mail" type="email" name="email" placeholder="hanako@tobecho.com" required>
+                            <label class="label" for="name">パスワード<small>必須</small></label>
+                            <input id="password" type="text" name="password" placeholder="パスワード" required>
                         </div>
                     </div>
+                    <div style="margin-bottom: 20px;">
+                        <a href="#">パスワードを忘れた方はこちらから</a>
+                    </div>
                     <div class="button-field">
-                        <button class="form-normal-button" type="reset">入力した文字をすべて削除</button>
-                        <button class="form-primary-button next-arrow-button" type="submit" id="submit">確認</button>
+                        <button class="form-primary-button next-arrow-button grow-field" type="submit"
+                            id="submit">ログインする</button>
+                    </div>
+                </form>
+                <form style="margin-top: 20px;">
+                    <h3>初めて利用するお客様</h3>
+                    <div class="button-field">
+                        <button class="form-secondary-button next-arrow-button grow-field" type="submit"
+                            id="submit">新規会員登録はこちら</button>
                     </div>
                 </form>
             </div>
@@ -80,14 +84,6 @@
 
         </footer>
     </div>
-
-    <script>
-        const submitBtn = document.getElementById('submit');
-        submitBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            location.href = "./home-repair-service-confirm.html";
-        });
-    </script>
 
 </body>
 
