@@ -57,14 +57,14 @@
                     </div>
                     <div class="button-field">
                         <button class="form-primary-button next-arrow-button grow-field" type="submit"
-                            id="submit">ログインする</button>
+                            id="login-submit">ログインする</button>
                     </div>
                 </form>
                 <form style="margin-top: 20px;">
                     <h3>初めて利用するお客様</h3>
                     <div class="button-field">
                         <button class="form-secondary-button next-arrow-button grow-field" type="submit"
-                            id="submit">新規会員登録はこちら</button>
+                            id="signup-submit">新規会員登録はこちら</button>
                     </div>
                 </form>
             </div>
@@ -85,6 +85,13 @@
         </footer>
     </div>
 
+    <script>
+        const submitBtn = document.getElementById('login-submit');
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            location.href='./my-page-order.html';
+        });
+    </script>
 </body>
 
 </html>
