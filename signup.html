@@ -12,6 +12,9 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+
+
 </head>
 
 
@@ -60,6 +63,18 @@
                         <div class="input-field">
                             <label class="label" for="e-mail">メールアドレス</label>
                             <input id="e-mail" type="email" name="email" placeholder="hanako@tobecho.com" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label class="label" for="postal-code">郵便番号</label>
+                            <input id="postal-code" type="text" name="postal-code"
+                                onKeyUp="AjaxZip3.zip2addr(this,'','address','address');" placeholder="791-2114"
+                                pattern="\d{3}-?\d{4}" required>
+                        </div>
+
+                        <div class="input-field grow-field">
+                            <label class="label" for="address">住所</label>
+                            <input id="address" type="text" name="address" placeholder="砥部町麻生000-0">
                         </div>
                         <div class="input-field">
                             <label class="label" for="name">パスワード<small>必須</small></label>
