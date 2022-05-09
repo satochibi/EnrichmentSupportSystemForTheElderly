@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高齢者のお困り解決砥部町内サービスサイト</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="./index.html">高齢者の<span>お困り解決</span>サイト<br>(砥部町内サービス)</a></h1>
+            <div class="header-buttons">
+                <div class="shopping-cart">
+                    <span class="shopping-count-badge">3</span>
+                    <a href="./shopping-cart.html" class="shopping-cart-button"><i class="fas fa-shopping-cart"></i>買い物カゴを見る</a>
+                </div>
+                <a href="./login.html" class="avatar-button"><i class="fa-solid fa-user"></i>会員の方はこちら</a>
+            </div>
+        </header>
+
+
+        <div class="breadcrumb-list">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./signup.html">会員登録</a></li>
+                <li><a href="#">会員登録確認</a></li>
+            </ul>
+        </div>
+
+        <div class="main-contents">
+            <h2>会員登録確認</h2>
+            <div class="no-item-message">
+                <p>以下の内容で会員登録しますか?</p>
+            </div>
+
+            <div class="contact-table">
+                <form>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <th>お名前</th>
+                                <td>砥部 花子</td>
+                            </tr>
+                            <tr>
+                                <th>ふりがな</th>
+                                <td>とべ はなこ</td>
+                            </tr>
+                            <tr>
+                                <th>電話番号</th>
+                                <td>089-982-0001</td>
+                            </tr>
+                            <tr>
+                                <th>メールアドレス</th>
+                                <td>hanako@tobecho.com</td>
+                            </tr>
+                            <tr>
+                                <th>パスワード</th>
+                                <td>ご登録いただいたパスワード</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-field">
+                        <button class="form-normal-button prev-arrow-button" type="button" onclick="location.href='./signup.html'">入力画面に戻る</button>
+                        <button class="form-secondary-button next-arrow-button" type="submit" id="submit">会員登録する</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <div class="footer-logo">
+                HAISABU Platform
+            </div>
+
+            <!-- <div class="ads">
+                広告
+            </div> -->
+
+        </footer>
+    </div>
+
+    <script>
+        const submitBtn = document.getElementById('submit');
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            location.href='./signup-complete.html';
+        });
+    </script>
+</body>
+
+</html>
