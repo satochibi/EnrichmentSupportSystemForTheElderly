@@ -367,6 +367,26 @@ div.container .main-contents div#order form .input-container .button-field input
 div.container .main-contents div#order form .input-container .button-field input:last-child {
   margin-left: 10px;
 }
+div.container .main-contents div#search {
+  margin: 40px 0;
+}
+div.container .main-contents div#search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container .main-contents div#search form input, div.container .main-contents div#search form button {
+  padding: 10px !important;
+  margin: 0;
+}
+div.container .main-contents div#search form input {
+  width: 70%;
+}
+div.container .main-contents div#search form button {
+  width: auto;
+  height: auto;
+  font-size: 1.2em;
+}
 div.container .main-contents div.shopping-table {
   display: flex;
   justify-content: space-around;

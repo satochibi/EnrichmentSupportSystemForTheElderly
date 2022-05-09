@@ -95,6 +95,32 @@ div.container {
             }
         }
 
+        div#search{
+            
+            margin: 40px 0;
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                input, button{
+                    padding: 10px !important;
+                    margin: 0;
+                }
+
+                input {
+                    width: 70%;
+                }
+
+                button {
+                    width: auto;
+                    height: auto;
+                    font-size: 1.2em;
+                }
+            }
+        }
+
         div.shopping-table {
             display: flex;
             justify-content: space-around;
