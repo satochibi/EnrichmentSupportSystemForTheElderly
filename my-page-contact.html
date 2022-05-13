@@ -42,19 +42,24 @@
             <h2>マイページ</h2>
 
             <div class="button-field">
-                <a href="my-page-order.html" class="form-normal-button">
+                <a href="my-page-order.html" class="normal-button">
                     <i class="fa-solid fa-box"></i>
                     <span>注文履歴</span>
                 </a>
 
-                <a href="my-page-book.html" class="form-normal-button">
+                <a href="my-page-book.html" class="normal-button">
                     <i class="fa-solid fa-book-open"></i>
                     <span>書籍取り寄せ履歴</span>
                 </a>
 
-                <a href="my-page-contact.html" class="form-normal-button">
+                <a href="my-page-contact.html" class="active-button">
                     <i class="fa-solid fa-comment-dots"></i>
                     <span>問い合わせ履歴</span>
+                </a>
+
+                <a href="my-page-setting.html" class="normal-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>お客様情報変更</span>
                 </a>
                 
             </div>
@@ -64,17 +69,20 @@
                 <table border="1">
                     <tbody>
                         <tr>
-                            <th>問い合わせ番号</th>
-                            <th>日時</th>
-                            <th>送信内容</th>
-                            <th>回答内容</th>
+                            <th>問い合わせ日時</th>
+                            <th>問い合わせ送信内容</th>
+                            <th>問い合わせ回答内容</th>
                             <th>回答者</th>
                         </tr>
                         <tr>
-                            <td>987656789</td>
                             <td>2022/5/10</td>
-                            <td>件名: 買い物の方法がよくわかりません<br>本文: 使い方がよくわかりません。</td>
-                            <td>件名: お問い合わせありがとうございます<br>本文: 砥部花子様、ご利用ありがとうございます<br>買い物の内容</td>
+                            <td>
+                                件名: 買い物の方法がよくわかりません<br>
+                                <details><summary>詳細を表示する</summary>本文: 使い方がよくわかりません。</details>
+                            </td>
+                            <td>件名: お問い合わせありがとうございます<br>
+                                <details><summary>詳細を表示する</summary>本文: 砥部花子様、ご利用ありがとうございます<br>買い物の内容</details>
+                            </td>
                             <td>田中</td>
                         </tr>
                     </tbody>
