@@ -82,6 +82,15 @@ div.container {
                 @include form-active-button;
                 @include button-style;
             }
+            .details-button {
+                @include form-normal-button;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                padding: 0 !important;
+                height: 50px !important;
+                text-decoration: none;
+            }
         }
 
         // レスポンシブデザインに対応していません
