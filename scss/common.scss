@@ -133,9 +133,8 @@ img {
             @include prev-arrow-button(#f69727);
         }
     }
-
-
 }
+
 
 
 // ページ全体の共通のスタイル定義
@@ -209,6 +208,10 @@ div.container {
                     color: white;
                     border-radius: 50%;
                     padding: 1px 0.25em;
+
+                    &.disabled{
+                        display: none;
+                    }
                 }
             }
 
