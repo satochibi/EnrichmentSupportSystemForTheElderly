@@ -132,6 +132,9 @@ div.container {
                 background-color: white;
                 width: 400px;
                 margin-bottom: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 div.item-header {
                     background-color: $btn-color;
