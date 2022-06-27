@@ -148,14 +148,16 @@ div.container {
                     }
                 }
 
+                img {
+                    height: 220px;
+                    margin: 0 auto;
+                }
+
                 div.item-body {
                     margin: 0 40px 40px;
                     color: $btn-color;
 
-                    img {
-                        height: 220px;
-                        margin: 0 auto;
-                    }
+                    
 
                     h4 {
                         margin-top: 5px;
