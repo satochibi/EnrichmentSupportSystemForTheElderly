@@ -83,41 +83,41 @@
             </div>
         </div>
 
+    </div>
+    <script>
+        $(function () {
+            $('tr[data-href]').addClass('clickable')
 
-        <script>
-            $(function () {
-                $('tr[data-href]').addClass('clickable')
-
-                    //クリックイベント
-                    .click(function (e) {
-                        //e.targetはクリックした要素自体、それがa要素以外であれば
-                        if (!$(e.target).is('a')) {
-                            URLJump(e);
-                        }
-                    })
-                    // フォーカス時のイベント
-                    .keypress(function (e) {
-                        var code = (e.keyCode ? e.keyCode : e.which);
-                        if (e.keyCode == 13) {
-                            URLJump(e);
-                        }
-                    });
-
-
-                function URLJump(e) {
-                    //その要素の先祖要素で一番近いtrの
-                    //data-href属性の値に書かれているURLに遷移する
-                    const query = $(e.target).closest('tr').data('href');
-                    const url = "./my-page-order-detail.html?randomid=" + query;
-                    location.href = url;
-                };
+                //クリックイベント
+                .click(function (e) {
+                    //e.targetはクリックした要素自体、それがa要素以外であれば
+                    if (!$(e.target).is('a')) {
+                        URLJump(e);
+                    }
+                })
+                // フォーカス時のイベント
+                .keypress(function (e) {
+                    var code = (e.keyCode ? e.keyCode : e.which);
+                    if (e.keyCode == 13) {
+                        URLJump(e);
+                    }
+                });
 
 
-            });
+            function URLJump(e) {
+                //その要素の先祖要素で一番近いtrの
+                //data-href属性の値に書かれているURLに遷移する
+                const query = $(e.target).closest('tr').data('href');
+                const url = "./my-page-order-detail.html?randomid=" + query;
+                location.href = url;
+            };
+
+
+        });
 
 
 
-        </script>
+    </script>
 </body>
 
 </html>
