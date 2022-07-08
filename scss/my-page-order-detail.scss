@@ -1,0 +1,64 @@
+@import "common.scss";
+
+div.container {
+    .main-contents {
+        div.contact-table form table tr th {
+            background-color: $yellow;
+        }
+
+        div.cart-table form{
+            .a-shop h3{
+                background-color: $yellow;
+            }
+
+            .button-field button{
+                flex-basis: 100%;
+            }
+        } 
+
+        li.cart-table-body-list-item {
+            &:nth-child(1) {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 49%;
+                @include sp {
+                    width: 100%;
+                    border-right: none;
+                }
+            }
+            &:nth-child(2) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 17%;
+                @include sp {
+                    width: 24%;
+                    justify-content: center;
+                }
+            }
+            &:nth-child(3) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 17%;
+                border-right: 1px solid $border-color;
+                @include sp {
+                    width: 25%;
+                    justify-content: center;
+                }
+            }
+            &:nth-child(4) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 17%;
+                border-right: none;
+                @include sp {
+                    width: 50%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

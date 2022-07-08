@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 
@@ -61,7 +63,7 @@
                     <i class="fa-solid fa-user"></i>
                     <span>お客様情報変更</span>
                 </a>
-                
+
             </div>
 
             <div class="log-table">
@@ -70,17 +72,11 @@
                     <tbody>
                         <tr>
                             <th>注文日</th>
-                            <th>商品</th>
-                            <th>個数</th>
-                            <th>小計</th>
                             <th>状況</th>
                         </tr>
-                        <tr>
+                        <tr data-href="1393661429C84E74B8F94AC82F7C0106" tabindex="0">
                             <td>2022/4/30</td>
-                            <td>かきくけこ店舗のあいうえお弁当</td>
-                            <td>3個</td>
-                            <td>1,580円</td>
-                            <td>発送準備中</td>
+                            <td>発送準備中&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></td>
                         </tr>
                     </tbody>
                 </table>
@@ -88,7 +84,40 @@
         </div>
 
 
+        <script>
+            $(function () {
+                $('tr[data-href]').addClass('clickable')
 
+                    //クリックイベント
+                    .click(function (e) {
+                        //e.targetはクリックした要素自体、それがa要素以外であれば
+                        if (!$(e.target).is('a')) {
+                            URLJump(e);
+                        }
+                    })
+                    // フォーカス時のイベント
+                    .keypress(function (e) {
+                        var code = (e.keyCode ? e.keyCode : e.which);
+                        if (e.keyCode == 13) {
+                            URLJump(e);
+                        }
+                    });
+
+
+                function URLJump(e) {
+                    //その要素の先祖要素で一番近いtrの
+                    //data-href属性の値に書かれているURLに遷移する
+                    const query = $(e.target).closest('tr').data('href');
+                    const url = "./my-page-order-detail.html?randomid=" + query;
+                    location.href = url;
+                };
+
+
+            });
+
+
+
+        </script>
 </body>
 
 </html>

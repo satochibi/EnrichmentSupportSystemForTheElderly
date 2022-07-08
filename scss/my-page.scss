@@ -11,17 +11,24 @@
         tr {
             height: 60px;
 
+            &.clickable:hover td,
+            &.clickable:focus td,
+            &.clickable:active td {
+                background-color: #ecf2fa;
+                cursor: pointer;
+            }
+
             th {
-                background-color: $yellow;
-                text-align: center;
+                background-color: $yellow !important;
+                text-align: center !important;
             }
 
             td {
-                padding: 12px;
-                word-break: break-all;
+                padding: 12px !important;
+                word-break: break-all !important;
                 // white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
             }
         }
     }
@@ -57,6 +64,7 @@
         font-size: 60px;
         color: black;
     }
+
     span {
         text-align: center;
         font-size: 18px;
@@ -69,6 +77,7 @@ div.container {
         .button-list {
             margin: 60px 0;
         }
+
         .button-field {
             display: flex;
             flex-wrap: wrap;
@@ -78,10 +87,12 @@ div.container {
                 @include form-normal-button;
                 @include button-style;
             }
+
             .active-button {
                 @include form-active-button;
                 @include button-style;
             }
+
             .details-button {
                 @include form-normal-button;
                 display: flex !important;
@@ -100,6 +111,7 @@ div.container {
             border-radius: 5px;
             padding: 26px;
             margin: 20px 20px 0;
+
             @include sp {
                 margin: 0;
             }
@@ -108,7 +120,17 @@ div.container {
                 font-size: 150%;
             }
 
+
             @include table-style;
+
         }
+
+        div.cart-table form .a-shop h3{
+            background-color: $yellow;
+        }
+
+
+        @include table-style;
+
     }
 }
