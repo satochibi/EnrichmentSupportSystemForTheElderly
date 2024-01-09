@@ -20,9 +20,9 @@
   "homepage": "https://github.com/satochibi/EnrichmentSupportSystemForTheElderly#readme",
   "devDependencies": {
     "lite-server": "^2.6.1",
-    "sass": "^1.48.0"
+    "sass": "^1.69.7"
   },
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.4"
   }
 }
